@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "微軟正黑體";
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #Back_top {
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            font-size: 16pt;
+        }
+
+        #Back_top:hover {
+            background-color: yellowgreen;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin:0 auto;
+        }
+
+        .banner {
+            max-width: 100vw;
+            height: calc(100vh - 209px);
+            background: url(img/banner.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .justify-content-around {
+            justify-content: space-around;
+        }
+
+        .anchors {
+            padding: 10px 0;
+
+        }
+
+        .anchor {
+            padding: 15px 30px;
+            background-color: darkslategray;
+            color: white;
+            font-size: 18pt;
+        }
+
+        .anchor:hover {
+            background-color: tomato;
+        }
+
+        .logo {
+            width: 150px;
+            padding: 15px 0;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        #templateE {
+
+            height: calc(100vh - 240px);
+            background-color: #6c88c4;
+            padding: 120px;
+        }
+
+        .tmpe {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Top-img {
+width: 100%;
+            height: 300px;
+            background-color: brown;
+            background-image: url(img/tempE1.jpg);
+            background-size: cover;
+            margin: 10px;
+        }
+
+        .text1 {
+           width: 50%;
+            text-align: center;
+            letter-spacing: 2px;
+            text-indent: 4em;
+        }
+        .Buttom-img {
+            width: 100%;
+            height: 300px;
+            background-image: url(img/tempE2.jpg);
+            background-color: coral;
+            background-size: cover;
+            margin: 10px;
+        }
+
+        #templateA {
+            max-width: 100vw;
+            height: 100vh;
+            background-color: #FFDACC;
+        }
+
+        /* .template_boxL,.template_boxR{
+            width: 100%;
+            height: 100%;
+            float: left;
+        } */
+        .imgA1 {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            background-image: url(img/tempA-1.jpg);
+            background-size: cover;
+            background-position: center;
+            float: left;
+            position: relative;
+        }
+
+        .imgA2 {
+            width: 50%;
+            height: 100%;
+            background-color: seagreen;
+            background-image: url(img/tempA-2.jpg);
+            background-size: cover;
+
+            float: left;
+            position: relative;
+        }
+
+
+        .temA_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20pt;
+            text-align: justify;
+            line-height: 1.5;
+            letter-spacing: 3px;
+
+        }
+
+        span {
+            font-size: 26pt;
+            color: springgreen;
+            text-align: center;
+            display: block;
+
+        }
+
+        #templateD {
+            background-image: url(img/temp2.jpg);
+            max-width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        #templateC {
+            max-width: 100vw;
+            height: calc(100vh - 240px);
+            background-color: lightgray;
+            padding: 120px 0;
+            /* 實際高度 100vh + 120px(上) + 120px(下) */
+        }
+
+        #templateC {
+            background-image: url(img/temp3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .title {
+            margin: 0;
+        }
+
+        .mb-30px {
+            margin-bottom: 30px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-justify {
+            text-align: justify;
+            /* 多行分散對齊 */
+        }
+
+        .templateC_text {
+            margin: 0;
+            font-size: 24px;
+            line-height: 1.5;
+            letter-spacing: 3px;
+            text-indent: 4em;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #footer {
+            max-width: 100vw;
+            height: 50px;
+            background-color: #6c88c4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt=""></div>
+            </div>
+        </div>
+        <div class="banner">
+        </div>
+        <div class="anchors">
+            <div class="container d-flex justify-content-around">
+                <a href="#templateE" class="anchor">劇情簡介</a>
+                <a href="#templateA" class="anchor">主要腳色</a>
+                <a href="#templateD" class="anchor">背景圖示</a>
+                <a href="#templateC" class="anchor">怪盜基德</a>
+            </div>
+        </div>
+    </div>
+    <div id="templateE">
+        <div class="container">
+            <div class="tmpe">
+                <div class="Top-img">
+                    <div class="text1">本作是名偵探柯南於平成時代所上映的最後一部劇場版。
+                        本作的故事發生在新加坡，是名偵探柯南首部以日本境外為舞台的劇場版。
+                        柯南以新身分登場，首次變身「亞瑟・平井」。
+                        京極真首次在劇場版以關鍵人物身份登場。
+                        主要的刑警角色目暮警官第2次在劇場版中沒有出現。（第1次為劇場唐紅的戀歌）
+                        本作是怪盜基德第六次在劇場版出現。</div>
+                </div>
+            </div>
+            <div class="tmpe">
+                <div class="text1">
+                    據說在19世紀末，世間最大的藍寶石「紺青之拳」與海盜船一同沉入新加坡水域。正當新加坡富豪計劃將其回收，並在公開場合現身時，濱海灣金沙酒店發生了謀殺案，現場還遺留著怪盜基德的染血預告書。原以為獲得藍寶石輕而易舉，沒想到基德在潛入地下金庫時，卻遭到最強空手道家「京極真」的阻撓。而另一方面，沒有護照的柯南也藉由基德的魔術變身為「亞瑟．平井」，在眼鏡、手錶、衣服全被奪走的情況下，被迫服從於基德……究竟這場計畫是否能成功？三人的命運又將會如何？
+
+                </div>
+                <div class="Buttom-img"></div>
+            </div>
+        </div>
+    </div>
+   <!--
+   ! // 
+   <section id="setion_1" class="setion_1">
+        <div class="container">
+            <div class="row">
+                <div class="block">
+                    <!-- <img src="imgs/cat1.jpg" alt=""> -2->
+                    <div class="bg-img bg-img1"></div>
+                </div>
+                <div class="block">
+                    <h1>Title</h1>
+                    <p>說得簡單一些，透過CSS，可以使得網站透過不同大小的螢幕視窗來改變網頁排版的方式，使得各種裝置的使用者，如電腦、平板、手機、電視都能夠得到最佳的視覺效果，由於是由同一個網頁內容轉變，管理者也就不必大費周章的重複更新網頁資訊。
+                        為了讓網站業主們輕鬆跟上這個浪潮，愛貝斯精心準備了CP值超高的網頁設計方案。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="block">
+                    <h1>人手一機的時代，有60%的人用手機瀏覽您的網站</h1>
+                    <p>根據Google的統計，將近60%的人們使用手機瀏覽網站。更有許多回家都不開電腦，只透過手機來獲取網頁資訊的群眾，而且比例越來越高。這時候如果沒有重視手機上的網站呈現效果，可能會流失相當多的潛在客戶。
+                    </p>
+                </div>
+                <div class="block">
+                    <!-- <img src="imgs/cat2.jpg" alt=""> -2->
+                    <div class="bg-img bg-img2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <div id="templateA">
+        <div class="imgA1">
+            <div class="temA_text"><span style="display:block">怪盜基德</span>
+                國際通緝犯，神出鬼沒的大怪盜，與柯南的關係既是對手又是合作者。在本作偽裝成工藤新一前往新加坡。</div>
+        </div>
+        <div class="imgA2">
+            <div class="temA_text"><span
+                    style="display:block">工藤新一</span>本作品男主角，原是知名的關東高中生偵探工藤新一，因被黑暗組織的琴酒灌下毒藥而縮小身體，化名為江戶川柯南寄住在毛利家中並暗中調查黑暗組織。
+                在本作化名為亞瑟·平井，名子來源取自英國名推理小說家亞瑟·柯南·道爾和日本推理小說始祖江戶川亂步的本名平井太郎。</div>
+        </div>
+    </div>
+    <div id="templateD">
+    </div>
+    <div id="templateC" class="d-flex align-items-center">
+
+        <div class="container">
+            <h1 class="title text-center mb-30px">怪盜基德</h1>
+            <p class="templateC_text text-justify">黑羽快斗平常是江古田高中二年B班學生，非常熱愛魔術、平常調皮、愛惡作劇。喜歡吃冰淇淋和巧克力。也很喜歡小動物。
+                快斗作為「怪盜基德」時，身著白色的魔術師裝扮（高禮帽、禮服），佩特製單片眼鏡，背後的披風可以變為滑翔翼。舉止優雅、極其紳士，有時也會露出調皮的一面。平常會看報紙上與自己有關的新聞。
+                是個充滿傳奇色彩的夜盜，專門以藝術品（特別是寶石）為目標盜竊。經常在月夜作案，作案前一定會先寄預告函給對方。總是神出鬼沒地盜取預告的目標，用華麗精湛的魔術手法作案，玩弄警察於掌中。雖是名通緝犯，但每次作案時並不會造成任何傷亡，而且每次作案也會吸引一大堆粉絲打氣。通常偷得的寶石、書畫等物品多半會歸還原主，或視情況給予真正需要的人。國際通緝犯，神出鬼沒的大怪盜，與柯南的關係既是對手又是合作者。在本作偽裝成工藤新一前往新加坡。
+            </p>
+        </div>
+    </div>
+    <!-- 回到最上層 -->
+    <a href="#navbar">
+        <div id="Back_top">▲ TOP</div>
+    </a>
+    <footer id="footer">
+        <div class="foot_text">2020© HankShih. All Rights Reserved</div>
+
+    </footer>
+</body>
+
+</html>

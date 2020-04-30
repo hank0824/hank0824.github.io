@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .cards{
+            display: flex;
+            padding: 10%;
+        }
+        .pic img{
+            width: 100%;
+        }
+        .text{
+            pa: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="cards">
+    <div class="card">
+        <div class="pic">
+            <img src="https://ichef.bbci.co.uk/news/ws/410/amz/worldservice/live/assets/images/2015/07/13/150713111411_whale0.jpg" alt="">
+            <div class="text">
+                名稱:抹香鯨<br>
+                <br>
+                簡介: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit incidunt quisquam minus repellendus, id quam temporibus quibusdam quaerat debitis quod veniam, officia in distinctio tenetur aliquid, reiciendis nulla vitae?
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var product=[{
+            product_name:'抹香鯨',
+            calories:'250',
+            price:'25',
+            description:'好好喝',
+            product_img:'https://ichef.bbci.co.uk/news/ws/410/amz/worldservice/live/assets/images/2015/07/13/150713111411_whale0.jpg'
+        },{
+            product_name:'虎鯨',
+            calories:'250',
+            price:'25',
+            description:'好好喝',
+            product_img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDQC1ZNG1RfvCvMpCo81ksZTFUbYGZJ_Lx2anhMXZxdlkgmn51&usqp=CAU'
+            },{
+            product_name:'藍鯨',
+            calories:'250',
+            price:'25',
+            description:'ㄑㄑ',
+            product_img:'https://image1.thenewslens.com/2017/5/dgk7h9fvncizsamq350myzuxezh29m.jpg?auto=compress&fit=crop&h=648&q=85&updated_at=2017-05-22-14-53-31&w=1080'
+            }
+        
+        ]
+        var cards = document.querySelector('.cards');
+        product.forEach(function(product){
+            cards.innerHTML+= `    
+        <div class="card">
+        <div class="product_pic">
+        <img src="${product.product_img}" alt="">
+        </div>
+        <div class="product_content">
+            <h1>飲料名稱:${product.product_img}</h1>
+            <div class="product_text">
+                熱量: ${product.calories}大卡 <br>
+                價錢: ${product.price}元 <br>
+                介紹: ${product.description}
+            </div>
+        </div>
+    </div>`
+        }
+    </script>
+</body>
+</html>
