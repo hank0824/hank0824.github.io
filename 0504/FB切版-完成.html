@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html body{
+            margin: 0;
+            background-color: #777;
+        }
+        .warp {
+            width: 1100px;
+            height: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        .topbar {
+            width: 100%;
+            background-color: #4267B2;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        .input {
+            width: 300px;
+            height: 30px;
+            border-radius: 30%;
+            margin: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-left: 15px;
+        }
+
+        .photowall {
+            width: 100%;
+            height: 250px;
+            background-color: #C1C1C1;
+            position: relative;
+            background-image: url(https://happy168.net/wp-content/uploads/2018/10/20181004_5bb64ef27cce5.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .update_btn{
+            position:absolute;
+            bottom: 40px;
+            right: 160px;
+            background-color: #eee;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .even_btn{
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+            background-color: #eee;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .buttombar {
+            width: 100%;
+            height: 50px;
+            background-color: #F5F6F7;
+            
+
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: solid 2px #eee;
+            background-image: url(https://img1.how01.com/imgs/3e/16/5/4afa000396d1acab5648.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 170px;
+            left: 20px;
+
+        }
+
+        ul {
+            margin: 0;
+            margin-left: 160px;
+            justify-content: center;
+            line-height: 5px;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            padding: 22px 20px;
+           border: solid 0.3px #E9EAED;
+            margin: auto;
+           
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="topbar">
+            <img class="icon" src="img/icon.png">
+            <input type="text" placeholder="搜尋人、事、物">
+        </div>
+        <div class="photowall" src="">
+            
+                <a href="http://google.com.tw" class="update_btn">更新資料</a>
+                <a href="http://google.com.tw" class="even_btn">查看活動資訊</a>
+ 
+        </div>
+        <div class="avatar"></div>
+        <div class="buttombar">
+            <UL>
+                <li>動態時報</li>
+                <li>關於</li>
+                <li>朋友</li>
+                <li>相片</li>
+                <li>更多</li>
+
+            </UL>
+        </div>
+    </div>
+</body>
+
+</html>
