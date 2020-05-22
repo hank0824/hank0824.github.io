@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="news.css">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
+</head>
+
+<body>
+
+    <!-- menu icon -->
+    <div class="menu_icon">
+        <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+
+    <div class="left_navbar  ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+
+        <div class="navitems">
+            <ul style="margin-top: 50px; font-size:20px;">
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+      
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+        
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                        <div class="nav_icon" ></div>
+                        <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <section class="right_content">
+        <!-- 輸入該區域的HTML內容 -->
+        <h1>最新消息</h1>
+        <div class="new">
+            <div class="border1"></div>
+            <h5>LATEST NEWS</h5>
+            <div class="border2"></div>
+        </div>
+        <!-- Swiper -->
+
+        <!-- Content here -->
+        <!-- <div class="swiper-father"> -->
+        <div class="swiper-container ">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide img1 mh6 div_shadow" style="background-image: url(./img/news/新品上市\(字\).jpg);"></div>
+                <div class="swiper-slide img2 mh5 div_shadow" style="background-image: url(./img/news/地球日\(字\).jpg);"></div>
+                <div class="swiper-slide img3 mh6 div_shadow" style="background-image: url(./img/news/疾病退散\(字\).jpg);"></div>
+                <div class="swiper-slide img4 mh6 div_shadow" style="background-image: url(./img/news/新品上市\(字\).jpg);"></div>
+                <div class="swiper-slide img5 mh5 div_shadow" style="background-image: url(./img/news/地球日\(字\).jpg);"></div>
+                <div class="swiper-slide img6 mh6 div_shadow" style="background-image: url(./img/news/疾病退散\(字\).jpg);"></div>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- </div> -->
+
+
+    </section>
+
+    <footer>
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="template.js"></script>
+    <script src="news.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

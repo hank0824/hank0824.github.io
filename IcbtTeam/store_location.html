@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門市據點</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="store_location.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        /* 自訂樣式 */
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-167190227-1');
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="left_navbar  ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+
+        <div class="navitems">
+            <ul style="margin-top: 50px; font-size:20px;">
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- menu icon -->
+    <div class="menu_icon">
+        <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+
+    <section class="right_content">
+        <div class="store_out">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-12  col-md-4  left_box" data-aos="fade-up-right">
+                        <div class="mapBox">
+                            <img class="map_border" src="./img/taiwan_map/taiwan_all.png" alt=""
+                                usemap="#taiwan_workmap">
+
+                            <map name="taiwan_workmap">
+                                <area id="poly_top" shape="poly"
+                                    coords="172,116,178,98,189,82,203,70,203,55,240,40,274,33,302,0,319,5,332,18,357,32,369,36,378,38,383,56,392,63,370,87,360,126,368,148,369,167,362,181,349,215,334,207,312,210,278,205,253,185,229,170,213,168,200,146">
+
+                                <area id="poly_center" shape="poly"
+                                    coords="175,117,188,130,201,146,213,172,228,173,240,173,253,188,273,201,284,212,266,238,251,252,259,275,248,291,249,318,241,340,243,363,226,385,213,395,199,412,186,403,178,403,155,395,148,376,130,378,106,376,83,367,58,377,38,390,21,383,29,353,64,288,91,242,109,212,130,171,151,140">
+
+                                <area id="poly_south" shape="poly"
+                                    coords="20,388,40,391,58,387,73,376,94,371,126,378,148,381,164,396,186,410,199,411,195,423,200,438,186,446,179,466,170,491,165,511,170,536,176,547,180,565,158,575,148,595,151,627,149,642,153,663,166,672,175,683,179,700,174,718,168,737,165,743,150,733,138,737,131,706,125,672,110,643,79,623,55,601,43,575,33,535,16,505,1,486,14,453,24,418">
+
+                                <area id="poly_east" shape="poly"
+                                    coords="286,206,306,211,323,212,339,211,348,222,339,236,326,253,324,266,321,275,326,290,319,306,315,340,304,367,300,396,293,431,281,447,280,461,275,475,265,501,254,526,235,537,238,556,225,570,206,581,193,613,179,651,179,672,161,668,151,656,151,640,153,592,163,572,183,553,169,531,168,507,184,461,199,438,199,418,231,378,246,361,245,335,246,295,260,265,256,255,273,226">
+                            </map>
+
+                            <img class="img_top click_active" src="./img/taiwan_map/taiwan_north.svg" alt="">
+
+                            <img class="img_center" src="./img/taiwan_map/taiwan_central.svg" alt="">
+
+                            <img class="img_south" src="./img/taiwan_map/taiwan_south.svg" alt="">
+
+                            <img class="img_east" src="./img/taiwan_map/taiwan_east.svg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="col-12  col-md-8  right_box" data-aos="fade-up-left">
+                        <div class="shopBox">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="50">
+                                    <div class="shop">
+                                        <h4> 基隆廟口店</h4>
+                                        <p> 02-24211682</p>
+                                        <p>基隆市仁愛區愛四路1號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="300">
+                                    <div class="shop">
+                                        <h4> 士林天母店</h4>
+                                        <p> 02-28711101</p>
+                                        <p>台北市士林區天母北路3號</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="500">
+                                    <div class="shop">
+                                        <h4>士林文林店</h4>
+                                        <p> 02-28815922</p>
+                                        <p>台北市士林區文林路191號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="700">
+                                    <div class="shop">
+                                        <h4> 土城明德店</h4>
+                                        <p> 02-22627000</p>
+                                        <p>新北市土城區明德路一段57號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="900">
+
+                                    <div class="shop">
+                                        <h4> 淡水中山店</h4>
+                                        <p> 02-26261162</p>
+                                        <p>新北市淡水區水碓街5號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="1100">
+                                    <div class="shop">
+                                        <h4> 新北市總店</h4>
+                                        <p> 02-29572501</p>
+                                        <p>新北市板橋區中山路二段159號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="1300">
+                                    <div class="shop">
+                                        <h4> 中壢中原店</h4>
+                                        <p> 03-4564366</p>
+                                        <p>桃園市中壢區日新路8號</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="1500">
+                                    <div class="shop">
+                                        <h4> 新竹馬偕店</h4>
+                                        <p> 03-5165006</p>
+                                        <p>新竹市東區水源街61號1F</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 padding_left" data-aos="flip-left"
+                                    data-aos-delay="1700">
+                                    <div class="shop">
+                                        <h4> 竹北正西店</h4>
+                                        <p> 03-5536707</p>
+                                        <p>新竹縣竹北市中正西路124號</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+    <script src="store_location.js"></script>
+
+
+</body>
+
+</html>

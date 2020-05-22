@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.right_content {
+  height: 100vh;
+  background-color: #f7b9a4;
+  font-family: "Noto Sans TC', sans-serif";
+  color: #3b465d;
+  letter-spacing: 1px;
+}
+
+.right_content .store_out {
+  height: 100%;
+}
+
+.right_content .store_out .container-fluid {
+  height: 100%;
+}
+
+.right_content .store_out .row {
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.right_content .store_out .left_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .left_box {
+    display: none;
+  }
+}
+
+.right_content .store_out .mapBox {
+  position: relative;
+}
+
+.right_content .store_out .mapBox .map_border {
+  width: 395px;
+}
+
+.right_content .store_out .mapBox .img_top {
+  position: absolute;
+  width: 220px;
+  top: 0px;
+  left: 175px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_top.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_top.click_active {
+  opacity: 1 !important;
+  pointer-events: default !important;
+}
+
+.right_content .store_out .mapBox .img_center {
+  position: absolute;
+  width: 266px;
+  top: 117px;
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_center.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_center.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_south {
+  position: absolute;
+  width: 205px;
+  top: 368px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_south.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_south.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_east {
+  position: absolute;
+  width: 204px;
+  top: 205px;
+  left: 147px;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.right_content .store_out .mapBox .img_east.active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .mapBox .img_east.click_active {
+  opacity: 1;
+  pointer-events: default;
+}
+
+.right_content .store_out .shopBox .row {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.right_content .store_out .shopBox .shop {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #3b465d;
+}
+
+@media all and (max-width: 1024px) {
+  .right_content .store_out .shopBox .shop {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3b465d;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .right_content .store_out .shopBox .shop {
+    margin-bottom: 50px;
+  }
+}
+
+.right_content .store_out .shopBox .shop h4 {
+  font-family: "Noto Sans TC', sans-serif";
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.right_content .store_out .shopBox .shop p {
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+
+.right_content .store_out .shopBox .col-6:nth-last-child(-n+3) .shop {
+  border-bottom: none;
+}
+/*# sourceMappingURL=store_location.css.map */

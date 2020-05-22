@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五十嵐嚴選</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        /* 自訂樣式 */
+        /* 字體改變 */
+        * {
+            font-family: "Noto Sans TC";
+        }
+
+        .myMOUSE {
+            cursor: pointer;
+        }
+
+        .right_content {
+            background-color: black;
+            height: 100vh;
+            position: relative;
+            /* background-image: url(./img/featured/背景圖1.jpg); */
+            /* background-size: cover;
+            background-position: center; */
+        }
+
+        .background {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .background_image1 {
+            background-image: url(./img/featured/背景圖1.jpg);
+            display: none;
+        }
+
+        .background_image2 {
+            background-image: url(./img/featured/背景圖2.jpg);
+            display: none;
+        }
+
+        .background_image3 {
+            background-image: url(./img/featured/背景圖3.jpg);
+            display: none;
+        }
+
+        .background_image4 {
+            background-image: url(./img/featured/背景圖4.jpg);
+            display: none;
+        }
+
+        .big_box {
+            width: 35vw;
+            height: 65vh;
+            position: absolute;
+            top: 58.5%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            border-radius: 5%;
+            margin-right: 1;
+        }
+
+        .black_box {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            border-radius: 5%;
+        }
+
+        .div_opacity {
+            opacity: 0.5;
+        }
+
+        /* .title {
+            /* position: fixed; */
+        /* top: 357px; */
+        /* right: 344px; 
+        }*/
+
+        .title h1 {
+            position: absolute;
+            font-size: 40px;
+            top: 10%;
+            left: 5%;
+            color: #EED8CB;
+            letter-spacing: 5px;
+            font-family: "Noto Sans TC";
+        }
+
+        .title p {
+            position: absolute;
+            font-size: 20px;
+            top: 25%;
+            left: 5%;
+            color: white;
+            line-height: 40px;
+            letter-spacing: 5px;
+            font-family: "微軟正黑體";
+            margin-right: 4%;
+            text-align: justify;
+        }
+
+        .box {
+            display: none;
+        }
+
+        .box h1 {
+            position: absolute;
+            font-size: 28px;
+            top: 45%;
+            left: 5%;
+            color: #E4B58F;
+            letter-spacing: 5px;
+            font-family: "Noto Sans TC";
+        }
+
+        .box p {
+            position: absolute;
+            font-size: 20px;
+            top: 55%;
+            left: 5%;
+            line-height: 40px;
+            color: white;
+            letter-spacing: 5px;
+            font-family: "微軟正黑體";
+            margin-right: 4%;
+            text-align: justify;
+        }
+
+        .right_content .a_box {
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+            position: absolute;
+            top: 71%;
+            right: 1%;
+            transform: translate(-20%, -50%);
+            line-height: 40px;
+            letter-spacing: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 0, 1%;
+        }
+
+        .right_content .a_box_2 {
+            list-style: none;
+            font-size: 20px;
+            display: none;
+        }
+
+        .a_box_2 li {
+            color: #969696;
+            text-decoration: none;
+            font-family: "微軟正黑體";
+        }
+
+        .a_box li {
+            color: #969696;
+            text-decoration: none;
+            font-family: "微軟正黑體";
+        }
+
+        .a_box_2 li .icon {
+            width: 30px;
+            height: 30px;
+            float: right;
+            background-image: url(./img/featured/珍奶ICON.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .a_box li .icon {
+            width: 25px;
+            height: 25px;
+            float: right;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-image: url(./img/featured/珍奶ICON.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .color_atv {
+            color: #FFFFFF !important;
+        }
+
+        .background.atv {
+            display: block;
+        }
+
+        .box.atv {
+            display: block;
+        }
+
+        .atv {
+            display: block;
+        }
+
+        /* 筆電板 */
+        @media screen and (max-width: 1536px) {
+            .title h1 {
+                font-size: 35px;
+            }
+
+            .title p {
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 5px;
+            }
+
+            .box h1 {
+                font-size: 25px;
+            }
+
+            .box p {
+                font-size: 18px;
+            }
+        }
+
+        /* 平板pro */
+        @media screen and (max-width: 1024px) {
+            .right_content .a_box {
+                display: none;
+            }
+
+            .right_content .a_box_2 {
+                width: 100%;
+                position: absolute;
+                top: 90%;
+                left: 5%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            .right_content li {
+                margin-right: 10%;
+            }
+
+            .big_box {
+                width: 80vw;
+                height: 50vh;
+                left: 50%;
+            }
+
+            .title h1 {
+                font-size: 40px;
+            }
+
+            .title p {
+                font-size: 23px;
+                line-height: 50px;
+                letter-spacing: 4px;
+            }
+
+            .box h1 {
+                font-size: 30px;
+            }
+
+            .box p {
+                font-size: 23px;
+            }
+
+            .a_box_2 li {
+                font-size: 28px;
+            }
+
+            /* ipad版 */
+            @media screen and (max-width: 768px) {
+                .big_box {
+                    height: 70vh;
+                }
+
+                .title h1 {
+                    font-size: 40px;
+                }
+
+                .title p {
+                    font-size: 20px;
+                    line-height: 40px;
+                    letter-spacing: 4px;
+                }
+
+                .box h1 {
+                    font-size: 30px;
+                }
+
+                .box p {
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+
+                .a_box_2 li {
+                    font-size: 20px;
+                }
+
+                /* iphoe plus版 */
+                @media screen and (max-width: 414px) {
+                    .background_image1 {
+                        background-image: url(./img/featured/手機版-1.jpg);
+                        display: none;
+                    }
+
+                    .background_image2 {
+                        background-image: url(./img/featured/手機版-2.jpg);
+                        display: none;
+                    }
+
+                    .background_image3 {
+                        background-image: url(./img/featured/手機版-3.jpg);
+                        display: none;
+                    }
+
+                    .background_image4 {
+                        background-image: url(./img/featured/手機版-4.jpg);
+                        display: none;
+                    }
+
+                    .big_box {
+                        top: 55%;
+                        height: 75vh;
+                    }
+
+                    .big_box h1 {
+                        top: 5%;
+                        font-size: 28px;
+                    }
+
+                    .title p {
+                        font-size: 14px;
+                        top: 15%;
+                        line-height: 25px;
+                        letter-spacing: 4px;
+                    }
+
+                    .box p {
+                        top: 46.5%;
+                        font-size: 14px;
+                        line-height: 25px;
+                        letter-spacing: 4px;
+                    }
+
+                    .box h1 {
+                        top: 40%;
+                        font-size: 20px;
+
+                    }
+
+                    .a_box_2 li {
+                        font-size: 12px;
+                        margin-right: 15px;
+                    }
+
+                    .a_box_2 li .icon {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .right_content .a_box_2 {
+                        top: 92%;
+                    }
+                }
+
+                @media screen and (max-width: 320px) {
+                    .big_box h1 {
+                        font-size: 28px;
+                    }
+
+                    .title p {
+                        line-height: 25px;
+                        letter-spacing: 0px;
+                    }
+
+                    .big_box p {
+                        font-size: 12px;
+                    }
+
+                    .box h1 {
+                        top: 35%;
+                        font-size: 20px;
+                    }
+
+                    .box p {
+                        top: 45%;
+                        line-height: 25px;
+                        letter-spacing: 0px;
+                    }
+
+                    .right_content .a_box_2 {
+                        top: 85%;
+                    }
+
+                    .a_box_2 li {
+                        font-size: 12px;
+                        margin-right: 3%;
+                    }
+
+                    .a_box_2 li .icon {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
+</head>
+
+<body>
+    <!-- <div class="box" style="background-color: red;">
+        <img src="./img/leaves.svg" alt="">
+    </div> -->
+    <!-- menu icon -->
+    <div class="menu_icon">
+        <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+    <div class="left_navbar  ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+
+        <div class="navitems">
+            <ul style="margin-top: 50px; font-size:20px;">
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <section class="right_content">
+        <!-- 輸入該區域的HTML內容 -->
+        <div class="background_image1 background atv"></div>
+        <div class="background_image2 background"></div>
+        <div class="background_image3 background"></div>
+        <div class="background_image4 background"></div>
+        <div class="big_box">
+            <div class="black_box div_opacity"></div>
+            <div class="title">
+                <h1>手搖茶第一品牌</h1>
+                <p>五十嵐品牌文化著重在「原料的挑選」、「製茶的過程」、「產品的精準口感」、以及「熱情的服務」。</p>
+            </div>
+            <div class="box1 box atv">
+                <h1>嚴選原料</h1>
+                <p>茶葉，仔細逐一挑選每片茶葉，因為我們堅信，唯有新鮮茶葉泡的茶，才能完全戰勝所有挑剔味蕾。
+                    珍珠，為了保持每顆黃金珍珠的透明飽滿，堅持珍珠以天然原料製成，並藉著不同水交替作用，確保每顆珍珠都能快樂彈跳入口中。</p>
+            </div>
+            <div class="box2 box">
+                <h1>職人製茶</h1>
+                <p>堅持使用自製專屬茶壺煮茶，水量及茶葉的完美比例皆控制固定的溫度，使調茶師能精準掌握每一口茶湯的絕佳口感，即使身處世界各地也能在悠閒午後喝到最傳統原始的好茶。</p>
+            </div>
+            <div class="box3 box">
+                <h1>精準口感</h1>
+                <p>為了達到從第一口到最後都能是令人愉悅，訓練調茶師必須從冰塊量至舀糖手勢角度，多次皆能保持一致不變，為了那能不失完美的襯托出如同徜徉於茶田中的自然茶香，不斷在口中忘返留香。</p>
+            </div>
+            <div class="box4 box">
+                <h1>熱情服務</h1>
+                <p>希望我們創造出友善及熱情的環境，將每位客人視為家人般真誠對待，儘管在繁忙的日子裡，只要駐足於店門口享受每一杯客製化的飲料，啜飲著我們真摯對待的溫暖，即可深刻感受被茶香簇擁的幸福。
+                </p>
+            </div>
+            <ul class="a_box_2">
+                <li class="mobile btn1 myMOUSE color_atv" data-value='1'>嚴選原料 <div class="btnicon1 icon"></div>
+                </li>
+                <li class="mobile btn2 myMOUSE" data-value='2'>職人製茶 <div class="btnicon2"></div>
+                </li>
+                <li class="mobile btn3 myMOUSE" data-value='3'>精準口感 <div class="btnicon3"></div>
+                </li>
+                <li class="mobile btn4 myMOUSE" data-value='4'>熱情服務 <div class="btnicon4"></div>
+                </li>
+            </ul>
+        </div>
+        <ul class="a_box">
+            <li class="btn1 myMOUSE color_atv" data-value='1'>嚴選原料 <div class="btnicon1 icon"></div>
+            </li>
+            <li class="btn2 myMOUSE" data-value='2'>職人製茶 <div class="btnicon2"></div>
+            </li>
+            <li class="btn3 myMOUSE" data-value='3'>精準口感 <div class="btnicon3"></div>
+            </li>
+            <li class="btn4 myMOUSE" data-value='4'>熱情服務 <div class="btnicon4"></div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- 裝置 -->
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+
+    <script>
+        // 程式碼
+        // var background = document.querySelector(".background")
+        var background_image1 = document.querySelectorAll(".background_image1 ")
+        var background_image2 = document.querySelectorAll(".background_image2 ")
+        var background_image3 = document.querySelectorAll(".background_image3 ")
+        var background_image4 = document.querySelectorAll(".background_image4 ")
+        //抓到icon
+        var btnicon1 = document.querySelectorAll(".btnicon1 ")
+        var btnicon2 = document.querySelectorAll(".btnicon2 ")
+        var btnicon3 = document.querySelectorAll(".btnicon3 ")
+        var btnicon4 = document.querySelectorAll(".btnicon4 ")
+        //圖片索引值預設
+        var img_index = 1;
+
+        //search all button
+        var btns = document.querySelectorAll(".myMOUSE");
+        //找到4個按鈕
+        var btn1 = document.querySelectorAll(".btn1");
+        var btn2 = document.querySelectorAll(".btn2");
+        var btn3 = document.querySelectorAll(".btn3");
+        var btn4 = document.querySelectorAll(".btn4");
+        //找個4個內容
+        var box1 = document.querySelectorAll(".box1");
+        var box2 = document.querySelectorAll(".box2");
+        var box3 = document.querySelectorAll(".box3");
+        var box4 = document.querySelectorAll(".box4");
+        //找到icon
+
+        //按下對應按鈕時
+
+
+        $(".myMOUSE").each(function (btnindex, btnitem) {
+            $(btnitem).click(function () {
+                var i = btnitem.dataset.value;//pointer btn
+                myfunction(i, btnitem);
+
+                // var atv = document.querySelectorAll(".atv")
+                // var icon = document.querySelectorAll(".icon");
+                // var color_atv = document.querySelectorAll(".color_atv");
+                // console.log(color_atv);
+
+
+                // color_atv.forEach(function (item, index) {
+                //     item.classList.remove("color_atv");
+
+                //     btnitem.classList.add("color_atv");
+                // })
+                // atv.forEach(function (item, index) {
+                //     item.classList.remove("atv");
+                //     $(".background_image" + i).addClass("atv");
+                //     // ("background_image" + i).classList.add("atv");
+                //     $(".box" + i).addClass("atv");
+                //     // ("box" + i).classList.add("atv");
+                //     //    background_image .classList.add("atv");
+                // })
+                // icon.forEach(function (item, index) {
+                //     item.classList.remove("icon");
+                //     $(".btnicon" + i).addClass("icon");
+
+                //     // btnitem.classList.add("icon");
+                // })
+
+                // // background.classList.remove("atv");
+                // // background_image1.classList.add("atv");
+                // // img_index = btnindex + 1;
+            });
+
+
+
+        })
+
+
+        function myfunction(i, btnitem) {
+            // var i = btnitem.dataset.value;//pointer btn
+            var atv = document.querySelectorAll(".atv")
+            var icon = document.querySelectorAll(".icon");
+            var color_atv = document.querySelectorAll(".color_atv");
+            console.log(color_atv);
+
+
+            color_atv.forEach(function (item, index) {
+                item.classList.remove("color_atv");
+
+                btnitem.classList.add("color_atv");
+            })
+            atv.forEach(function (item, index) {
+                item.classList.remove("atv");
+                $(".background_image" + i).addClass("atv");
+                // ("background_image" + i).classList.add("atv");
+                $(".box" + i).addClass("atv");
+                // ("box" + i).classList.add("atv");
+                //    background_image .classList.add("atv");
+            })
+            icon.forEach(function (item, index) {
+                item.classList.remove("icon");
+                $(".btnicon" + i).addClass("icon");
+
+                // btnitem.classList.add("icon");
+            })
+
+            if (i == 4) {
+                //延遲1s，顯示footer，主要是讓user 滾動滑鼠時，不要一次到底，停留在喝完飲料的畫面
+                setTimeout(function () {
+                    $("footer").show();
+                }, 1000)
+            } else {
+                $("footer").hide();
+                console.log("scrolltop()=", $(window).scrollTop());
+                console.log("$(window).height()=", $(window).height());
+
+
+            }
+        }
+
+
+
+        // btn1.onclick = function () {
+        //     var atv = document.querySelector(".atv")
+        //     var icon = document.querySelector(".icon");
+        //     var color_atv = document.querySelector(".color_atv");
+        //     console.log(color_atv);
+
+
+        //     color_atv.classList.remove("color_atv");
+        //     btn1.classList.add("color_atv");
+
+        //     atv.classList.remove("atv");
+        //     box1.classList.add("atv");
+
+        //     icon.classList.remove("icon");
+        //     btnicon1.classList.add("icon");
+
+        //     background.classList.remove("atv");
+        //     background_image1.classList.add("atv");
+        //     img_index = 1;
+        // }
+
+        // btn2.forEach(function (item, index) {
+        //     var atv = item.querySelector(".atv")
+        //     var icon = item.querySelector(".icon");
+        //     var color_atv = item.querySelector(".color_atv");
+
+
+        //     color_atv.classList.remove("color_atv");
+        //     btn1.classList.add("color_atv");
+
+        //     atv.classList.remove("atv");
+        //     box1.classList.add("atv");
+
+        //     icon.classList.remove("icon");
+        //     btnicon1.classList.add("icon");
+
+        //     background.classList.remove("atv");
+        //     background_image1.classList.add("atv");
+        //     img_index = 2;
+
+        // });
+
+        // btn2.onclick = function () {
+        //     var atv = document.querySelector(".atv")
+        //     var icon = document.querySelector(".icon");
+        //     var color_atv = document.querySelector(".color_atv");
+
+        //     color_atv.classList.remove("color_atv");
+        //     btn2.classList.add("color_atv");
+
+        //     atv.classList.remove("atv");
+        //     box2.classList.add("atv");
+
+        //     icon.classList.remove("icon");
+        //     btnicon2.classList.add("icon");
+
+        //     background.classList.remove("atv");
+        //     background_image2.classList.add("atv")
+        //     img_index = 2;
+        // }
+        // btn3.onclick = function () {
+        //     var atv = document.querySelector(".atv")
+        //     var icon = document.querySelector(".icon");
+        //     var color_atv = document.querySelector(".color_atv");
+        //     color_atv.classList.remove("color_atv");
+        //     btn3.classList.add("color_atv");
+        //     atv.classList.remove("atv");
+        //     box3.classList.add("atv");
+        //     icon.classList.remove("icon");
+        //     btnicon3.classList.add("icon");
+        //     background.classList.remove("atv");
+        //     background_image3.classList.add("atv");
+        //     img_index = 3;
+        // }
+
+        // btn4.onclick = function () {
+        //     var atv = document.querySelector(".atv")
+        //     var icon = document.querySelector(".icon");
+        //     var color_atv = document.querySelector(".color_atv");
+        //     color_atv.classList.remove("color_atv");
+        //     btn4.classList.add("color_atv");
+        //     atv.classList.remove("atv");
+        //     box4.classList.add("atv");
+        //     icon.classList.remove("icon");
+        //     btnicon4.classList.add("icon");
+        //     background.classList.remove("atv");
+        //     background_image4.classList.add("atv");
+        //     img_index = 4;
+        // }
+        //移除所有atv
+        //且在對應內容上加上atv
+        //在style的background上改變字串
+
+        //預設滑鼠滾動次數
+        var iDownWheel = 0;
+        var iTopWheel = 0;
+
+        $(window).on('wheel', function (e) {
+
+            var delta = e.originalEvent.deltaY;
+
+            if (delta > 0) {
+                console.log("down");
+                if (iTopWheel != 0) {
+                    iTopWheel = 0;
+
+                }
+                if (iDownWheel % 5 == 0) {
+                    if (img_index < 4) {
+                        img_index += 1;
+
+
+                        var btns = document.querySelectorAll(".btn" + img_index);
+
+
+                        btns.forEach(function (item, index) {
+
+
+                            if ((device.mobile() || device.tablet())) {
+                                if ($(item).hasClass("mobile")) {
+                                    myfunction(img_index, item);
+                                }
+                            } else {
+                                if (!$(item).hasClass("mobile")) {
+                                    myfunction(img_index, item);
+                                }
+                            }
+
+                        })
+
+                    }
+                }
+
+                iDownWheel += 1;
+
+            } // going down
+            else {// going up
+                console.log("up");
+                if (iDownWheel != 0) {
+                    iDownWheel = 0;
+
+                }
+                if (iTopWheel % 5 == 0) {
+                    if (img_index > 1) {
+                        img_index -= 1;
+
+
+                        var btns = document.querySelectorAll(".btn" + img_index);
+
+
+                        btns.forEach(function (item, index) {
+
+
+                            if ((device.mobile() || device.tablet())) {
+                                if ($(item).hasClass("mobile")) {
+                                    myfunction(img_index, item);
+                                }
+                            } else {
+                                if (!$(item).hasClass("mobile")) {
+                                    myfunction(img_index, item);
+                                }
+                            }
+
+                        })
+                    }
+                }
+
+
+
+                iTopWheel += 1;
+            }
+        }
+        );
+
+
+        //手機滑動
+        $("footer").hide();
+        var ts;
+        $(document).on('touchstart', function (e) {
+            ts = e.originalEvent.touches[0].clientY;
+            ts += 50;
+        });
+        $(window).on('touchmove', function (e) {
+            console.log($(window).scrollTop());
+            console.log($(window).height());
+            console.log($("body").height());
+            // $(window).scrollTop($(window).scrollTop() - 50)
+
+            // if ($(window).scrollTop() + $(window).height() >= $("body").height() - 150) {
+            //     //延遲1s，顯示footer，主要是讓user 滾動滑鼠時，不要一次到底，停留在喝完飲料的畫面
+            //     setTimeout(function () {
+            //         $("footer").show();
+            //     }, 1000)
+
+            // }
+            var te = e.originalEvent.changedTouches[0].clientY;
+            var delta = e.originalEvent.deltaY;
+
+            if (ts > te) {
+                console.log("down");
+
+
+                if (iTopWheel != 0) {
+                    iTopWheel = 0;
+
+                }
+                // if (iDownWheel % 5 == 0) {
+                if (img_index < 4) {
+                    img_index += 1;
+
+
+                    var btns = document.querySelectorAll(".btn" + img_index);
+
+
+                    btns.forEach(function (item, index) {
+
+
+                        if ((device.mobile() || device.tablet())) {
+                            if ($(item).hasClass("mobile")) {
+                                myfunction(img_index, item);
+                            }
+                        } else {
+                            if (!$(item).hasClass("mobile")) {
+                                myfunction(img_index, item);
+                            }
+                        }
+
+                    })
+
+                    iDownWheel += 1;
+                }
+                // }
+
+
+
+            }
+            else {
+                console.log("up");
+                //$(window).scrollTop($(window).height());
+                if (iDownWheel != 0) {
+                    iDownWheel = 0;
+
+                }
+                // if (iTopWheel % 5 == 0) {
+                if (img_index > 1) {
+                    img_index -= 1;
+
+
+                    var btns = document.querySelectorAll(".btn" + img_index);
+
+
+                    btns.forEach(function (item, index) {
+
+
+                        if ((device.mobile() || device.tablet())) {
+                            if ($(item).hasClass("mobile")) {
+                                myfunction(img_index, item);
+                            }
+                        } else {
+                            if (!$(item).hasClass("mobile")) {
+                                myfunction(img_index, item);
+                            }
+                        }
+
+                    })
+                    iTopWheel += 1;
+                }
+                // }
+            }
+        }
+        );
+    </script>
+
+</body>
+
+</html>

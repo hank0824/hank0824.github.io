@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.cover {
+          width: 200px;
+          height: 100px;
+          background-color: yellow;
+          border: 1px solid black;
+          -ms-transform: scale(1.05); /* IE 9 */
+          transform: scale(1.05); /* Standard syntax */
+          transition: 0.5s;
+        }
+        div.cover:hover{
+          -ms-transform: scale(1); /* IE 9 */
+          transform: scale(1); /* Standard syntax */
+        }
+        
+        .box{
+          width: 200px;
+          height: 100px;
+          background-color:red;
+          overflow:hidden;
+        }
+        </style>
+</head>
+<body>
+ 
+<div class="box">
+  <div class="cover">
+      This div element is two times of its original width, and three times of its original height.
+  </div>
+</div> 
+
+<script>
+    var coverhover=document.querySelector("div.cover");
+    var coverhover
+    // ("div.cover:hover").
+</script>
+</body>
+</html>

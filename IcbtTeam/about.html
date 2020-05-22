@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於50嵐</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        /* 自訂樣式 */
+        body {
+            /* height: 600vh; */
+            perspective: 0px;
+            -webkit-perspective: 0px;
+        }
+
+
+
+        .titleColor {
+            color: #3B465D;
+            ;
+        }
+
+        .subtitleColor {
+            color: #132951;
+        }
+
+        .pColor {
+            color: #3B465D;
+        }
+
+        .right_content {
+            background-color: transparent;
+            background-color: #F7B9A4;
+            color: white;
+            font-family: 'Noto Sans TC', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about {
+            padding: 122px 0;
+            overflow: hidden;
+        }
+
+        .about .titleimg {
+            margin-top: -26px;
+            /* animation: jump 2s 1 ease-in-out;
+            animation-iteration-count: infinite; */
+
+
+        }
+
+         .imgbox1 {
+            position: absolute;
+            /* right: 0px; */
+            top: 26px;
+            right: 183px;
+            width: 400px;
+            /* overflow: hidden; */
+            /* transform: rotate(15deg); */
+            /* display: none; */
+            /* max-width:700px; */
+
+        }
+
+         .rightCornerImg,
+         .leftCenterImg,
+         .rightBottomImg {
+            opacity: 0.7;
+        }
+
+
+
+         .rightCornerImg {
+            max-width: 700px;
+
+        }
+
+        .about h1 {
+            margin: 0;
+            font-size: 60px;
+            padding: 0 84px 0 72px;
+        }
+
+        .about h6 {
+            margin: 0;
+            font-size: 26px;
+            padding: 60px 0 30px 0;
+        }
+
+        .about p {
+            margin: 0;
+            font-size: 22px;
+            line-height: 48px;
+        }
+
+         .imgbox2 {
+            position: absolute;
+            left: 100px;
+            /* display: none; */
+            /* width: 521px; */
+        }
+
+        .about .margin_bottom_p {
+
+            /* margin-bottom: 23px; */
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+
+
+        .box .drinkimg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* z-index: 99; */
+        }
+
+
+        .drinkimg.active {
+            display: block;
+        }
+
+        .drinkimg.none {
+            display: none;
+        }
+
+        .bottomPart {
+            position: relative;
+        }
+
+        .rim {
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        .rim1,
+        .rim2,
+        .rim3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            width: 0em;
+            height: 0em;
+            border: white .5em solid;
+            background: #F7B9A4;
+        }
+
+
+
+        .rim1 {
+            /* -webkit-animation: expand 2s linear infinite;
+ */
+            -webkit-animation: expand 2s linear infinite;
+            /* Safari 4+ */
+            -moz-animation: expand 2s linear infinite;
+            /* Fx 5+ */
+            -o-animation: expand 2s linear infinite;
+            /* Opera 12+ */
+            animation: expand 2s linear infinite;
+            /* IE 10+, Fx 29+ */
+        }
+
+        .rim2 {
+            /* -webkit-animation: expand 2s linear .5s infinite; */
+
+            -webkit-animation: expand 2s linear .5s infinite;
+            /* Safari 4+ */
+            -moz-animation: expand 2s linear .5s infinite;
+            /* Fx 5+ */
+            -o-animation: expand 2s linear .5s infinite;
+            /* Opera 12+ */
+            animation: expand 2s linear .5s infinite;
+            /* IE 10+, Fx 29+ */
+        }
+
+        .rim3 {
+            /* -webkit-animation: expand 2s linear 1s infinite; */
+
+            -webkit-animation: expand 2s linear 1s infinite;
+            /* Safari 4+ */
+            -moz-animation: expand 2s linear 1s infinite;
+            /* Fx 5+ */
+            -o-animation: expand 2s linear 1s infinite;
+            /* Opera 12+ */
+            animation: expand 2s linear 1s infinite;
+            /* IE 10+, Fx 29+ */
+        }
+
+        @-webkit-keyframes expand {
+            0% {
+                top: calc(50% - .5em);
+                left: calc(50% - .5em);
+                width: 1em;
+                height: 1em;
+                border: white .25em solid;
+                opacity: 1;
+            }
+
+            100% {
+                top: calc(50% - 5.5em);
+                left: calc(50% - 5.5em);
+                width: 11em;
+                height: 11em;
+                border: white .5em solid;
+                opacity: 0;
+            }
+        }
+
+
+        .years {
+            /* font-size: 26px */
+            /* position: absolute; */
+            /* 未展開 */
+            /* right: 0; */
+            /* 展開 */
+            /* right: -255px; */
+            /* top: 0;
+            z-index: 99; */
+        }
+
+        .year1994 {
+            /* 1994 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            right: 8px;
+            /* 展開 */
+            /* right: -242px; */
+
+            top: 280px;
+        }
+
+        .year1997 {
+            /* 1997 */
+            opacity: 0;
+            position: absolute;
+            /*未展開*/
+            left: 0px;
+            /*展開*/
+            /* left: -155px; */
+            top: 300px;
+        }
+
+        .margin_top_12 {
+            margin-top: -12px;
+        }
+
+        .year2000 {
+            /* 2000 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            right: 32px;
+            /* 展開 */
+            /* right: -161px; */
+            top: 373px;
+            opacity: 0;
+        }
+
+        .year2002 {
+            /* 2002 */
+            opacity: 0;
+            position: absolute;
+            /*未展開*/
+            left: 12px;
+            /*展開*/
+            /* left: -246px; */
+            top: 411px;
+        }
+
+        .year2003 {
+            /* 2003 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            right: 34px;
+            /* 展開 */
+            /* right: -221px; */
+            top: 463px;
+        }
+
+        .year2005 {
+            /* 2005 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            left: 24px;
+            /* 展開 */
+            /* left: -155px; */
+            top: 516px;
+        }
+
+        .year2006 {
+            /* 2006 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            right: 51px;
+            /* 展開 */
+            /* right: -127px; */
+            top: 590px;
+        }
+
+        .year2012 {
+            /* 2012 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            left: 24px;
+            /* 展開 */
+            /* left: -195px; */
+            top: 665px;
+        }
+
+        .year2016 {
+            /* 2016 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            right: 60px;
+            /* 展開 */
+            /* right: -165px; */
+            top: 723px;
+        }
+
+        .year2017 {
+            /* 2017 */
+            opacity: 0;
+            position: absolute;
+            /* 未展開 */
+            left: 56px;
+            /* 展開 */
+            /* left: -179px; */
+            top: 786px;
+        }
+
+        .mobile_years {
+            display: none;
+        }
+
+        .timeline {
+            overflow: hidden;
+        }
+
+        .box3 {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            overflow: hidden;
+        }
+
+
+        .line_content .line {
+            width: 100%;
+            border: 1px solid white;
+            margin: 0;
+        }
+
+        .line_content .circle {
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -12px;
+        }
+
+
+        .drinking {
+
+            position: relative;
+            z-index: 1;
+            background: url(./img/about/cup3.png) 0 0 no-repeat;
+            width: 436px;
+            height: 882px;
+            margin: 0 auto;
+            background-position-y: -8819px;
+
+
+        }
+
+
+
+        .hidden {
+            display: block;
+        }
+
+        @media(min-width: 1920px) {
+             .rightCornerImg {
+
+                width: 700px;
+            }
+
+             .leftCenterImg {
+
+                width: 521px;
+            }
+
+            .rightBottomImg {
+                width: 657px;
+            }
+
+
+        }
+
+        @media (max-width: 1919px) {
+             .rightCornerImg {
+
+                width: 30vw;
+            }
+
+         .leftCenterImg {
+
+                width: 30vw;
+            }
+
+            .rightBottomImg {
+
+                width: 30vw;
+            }
+
+            .imgbox3 {
+                /* right: -150px; */
+            }
+
+        }
+
+        @media (max-width: 1500px) {
+
+             .imgbox1 {
+                top: 120px;
+            }
+
+             .rightCornerImg {
+
+                width: 25vw;
+            }
+
+             .imgbox2 {
+                left: 35px;
+            }
+
+
+
+            .imgbox3 {
+                /* right: -150px; */
+            }
+
+            .rightBottomImg {
+
+                width: 30vw;
+            }
+
+
+
+        }
+
+        @media (max-width: 768px) {
+
+
+            .about {
+                padding: 122px 0 60px 0;
+                overflow: hidden;
+            }
+
+             .titlepart img {
+                width: 50px;
+
+            }
+
+             .imgbox1 {
+                display: none;
+
+            }
+
+
+             .imgbox2 {
+                display: none;
+            }
+
+            .about .titleimg {
+                margin-top: -12px;
+            }
+
+            .imgbox3 {
+                display: none;
+            }
+
+            .about h1 {
+
+                font-size: 30px;
+                padding: 0 32px 0 32px;
+            }
+
+            .about h6 {
+                font-size: 22px;
+                padding: 30px 0 30px 0;
+            }
+
+            .about p {
+                margin: 0;
+                font-size: 16px;
+                text-align: justify;
+                padding: 0px 20px;
+                line-height: 30px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .comma::before {
+                content: "，";
+
+            }
+
+
+
+            .drinking {
+                position: relative;
+                z-index: 1;
+                background: url(./img/about/mobile_cup.png) 0 0 no-repeat;
+                width: 147px;
+                height: 299px;
+                margin: unset;
+                left: 50%;
+                transform: translateX(-50%);
+                background-position-y: -2989px;
+            }
+
+            .margin_top_12 {
+                margin-top: -12px;
+            }
+
+
+            .mobile_years {
+                display: block;
+            }
+
+            .year1994 {
+                /* 1994 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                right: 2px;
+                /* 展開 */
+                /* right: -84px; */
+
+                top: 95px;
+            }
+
+            .year1997 {
+                /* 1997 */
+                opacity: 0;
+                position: absolute;
+                /*未展開*/
+                left: 0px;
+                /*展開*/
+                /* left: -77px; */
+                top: 100px;
+            }
+
+            .year2000 {
+                /* 2000 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                right: 10px;
+                /* 展開 */
+                /* right: -58px; */
+                top: 126px;
+
+            }
+
+            .year2002 {
+                /* 2002 */
+                opacity: 0;
+                position: absolute;
+                /*未展開*/
+                left: 4px;
+                /*展開*/
+                /* left: -84px; */
+                top: 135px;
+            }
+
+            .year2003 {
+                /* 2003 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                right: 10px;
+                /* 展開 */
+                /* right: -88px; */
+                top: 157px;
+            }
+
+            .year2005 {
+                /* 2005 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                left: 8px;
+                /* 展開 */
+                /* left: -80px; */
+                top: 172px;
+            }
+
+            .year2006 {
+                /* 2006 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                right: 15px;
+                /* 展開 */
+                /* right: -67px; */
+                top: 199px;
+            }
+
+            .year2012 {
+                /* 2012 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                left: 8px;
+                /* 展開 */
+                /* left: -94px; */
+                top: 222px;
+            }
+
+            .year2016 {
+                /* 2016 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                right: 18px;
+                /* 展開 */
+                /* right: -71px; */
+                top: 243px;
+            }
+
+            .year2017 {
+                /* 2017 */
+                opacity: 0;
+                position: absolute;
+                /* 未展開 */
+                left: 20px;
+                /* 展開 */
+                /* left: -96px; */
+                top: 262px;
+            }
+
+            .rim {
+                top: 16px;
+            }
+
+            @-webkit-keyframes expand {
+                0% {
+                    top: calc(50% - .25em);
+                    left: calc(50% - .25em);
+                    width: 0.5em;
+                    height: 0.5em;
+                    border: white .05em solid;
+                    opacity: 1;
+                }
+
+                100% {
+                    top: calc(50% - 2em);
+                    left: calc(50% - 2em);
+                    width: 4em;
+                    height: 4em;
+                    border: white .25em solid;
+                    opacity: 0;
+                }
+            }
+
+
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
+
+</head>
+
+<body>
+    <!-- <div class="box" style="background-color: red;">
+        <img src="./img/leaves.svg" alt="">
+    </div> -->
+
+    <div class="left_navbar  ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+
+        <div class="navitems">
+            <ul style="margin-top: 50px; font-size:20px;">
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- menu icon -->
+    <div class="menu_icon">
+        <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+
+    <section class="right_content">
+        <div class="box3">
+            <div class="imgbox3" data-aos="zoom-out-left">
+                <img src="./img/about/tea.png" class="rightBottomImg" alt="">
+            </div>
+        </div>
+            <div class="imgbox1" data-aos="fade-down">
+                <img src="./img/about/teaPowder2.png" class="rightCornerImg" alt="">
+            </div>
+        <div class="about text-center">
+            <div class="titlepart d-flex justify-content-center">
+                <img src="./img/about/cocoMilk.png" class="titleimg" data-aos="zoom-out-right" alt="">
+                <h1 class="titleColor" data-aos="zoom-out-up">關於50嵐</h1>
+                <img src="./img/about/greenMilk.png" class="titleimg" data-aos="zoom-out-left" alt="">
+            </div>
+
+
+
+            <h6 class="subtitleColor" data-aos="zoom-out-up">連鎖體系</h6>
+            <p class=" pColor ">50嵐綠茶連鎖體系於1994年由創辦人馬先生自台南成立<span class=""><span class="comma"><br
+                            class="hidden">進而自高雄區、中區(含雲、嘉)、台北區、桃竹苗區陸續拓點。</p>
+            <h6 class="subtitleColor" data-aos="zoom-out-up">採取全國分區經營模式</h6>
+            <p class="margin_bottom_p pColor">因各地區之營運成本(例租金、人事等)與風俗民情不同，<br
+                    class="hidden">故有不同之商品定價與經營方式，此乃與其他品牌不同之處。<br class="hidden">50嵐綠茶連鎖體系截至2012年12月底全國總店數超越五百間門市，<br
+                    class="hidden">
+                目前仍在陸續佈局中。</p>
+            <div class="imgbox2" data-aos="fade-right">
+                <img src="./img/about/boba.png" class="leftCenterImg" alt="">
+            </div>
+
+        </div>
+
+        <!-- <div class="rim">
+            <div class="rim1"></div>
+            <div class="rim2"></div>
+            <div class="rim3"></div>
+        </div> -->
+
+        <div class="bottomPart">
+            <!-- <div class="rim">
+                <div class="rim1"></div>
+                <div class="rim2"></div>
+                <div class="rim3"></div>
+            </div> -->
+            <div class="timeline ">
+                <div class="drinking">
+
+
+                    <div class="years hidden">
+                        <img class="year year1994 t1" src="./img/about/t1.png" alt="">
+                        <img class="year year1997 t2" src="./img/about/t2.png" alt="">
+                        <img class="year year2000 t3" src="./img/about/t3.png" alt="">
+                        <img class="year year2002 t4" src="./img/about/t4.png" alt="">
+                        <img class="year year2003 t5" src="./img/about/t5.png" alt="">
+                        <img class="year year2005 t6" src="./img/about/t6.png" alt="">
+                        <img class="year year2006 t7" src="./img/about/t7.png" alt="">
+                        <img class="year year2012 t8" src="./img/about/t8.png" alt="">
+                        <img class="year year2016 t9" src="./img/about/t9.png" alt="">
+                        <img class="year year2017 t10" src="./img/about/t10.png" alt="">
+                    </div>
+                    <div class="mobile_years ">
+                        <img class="year year1994 t1" src="./img/about/mobile_t1.png" alt="">
+                        <img class="year year1997 t2" src="./img/about/mobile_t2.png" alt="">
+                        <img class="year year2000 t3" src="./img/about/mobile_t3.png" alt="">
+                        <img class="year year2002 t4" src="./img/about/mobile_t4.png" alt="">
+                        <img class="year year2003 t5" src="./img/about/mobile_t5.png" alt="">
+                        <img class="year year2005 t6" src="./img/about/mobile_t6.png" alt="">
+                        <img class="year year2006 t7" src="./img/about/mobile_t7.png" alt="">
+                        <img class="year year2012 t8" src="./img/about/mobile_t8.png" alt="">
+                        <img class="year year2016 t9" src="./img/about/mobile_t9.png" alt="">
+                        <img class="year year2017 t10" src="./img/about/mobile_t10.png" alt="">
+                    </div>
+                </div>
+
+                <!-- <div class="box3">
+                    <div class="imgbox3" data-aos="zoom-out-left">
+                        <img src="./img/about/tea.png" class="rightBottomImg" alt="">
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="rim">
+                <div class="rim1"></div>
+                <div class="rim2"></div>
+                <div class="rim3"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <footer class="show">
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 裝置 -->
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+
+    <script>
+        // 程式碼
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+
+        var isStop = false;
+
+        // 預設不顯示footer
+        if (isStop) {
+            $("footer").show();
+        } else {
+            $("footer").hide();
+        }
+
+        //預設滑鼠滾輪次數
+        var imgIndex = 0
+
+        var arrPos = ['right', 'left', 'right', 'left', 'right', 'left', 'right', 'left', 'right', 'left'];
+        var arrRightPos = [-242, -155, -161, -246, -221, -155, -127, -195, -165, -179];
+        var iheight = 882
+        // var selectorName = 't';
+
+        console.log("screen.width", screen.width);
+
+        if (screen.width <= 768) {
+            arrRightPos = [-84, -77, -58, -84, -88, -80, -67, -94, -71, -96];
+            iheight = 299;
+            // selectorName = 'mobile_t';
+        }
+
+        //滾軸
+        $(window).on('wheel', function (e) {
+            if ($(window).scrollTop() + $(window).height() >= $("body").height()) {
+
+                var delta = e.originalEvent.deltaY;
+                if (delta > 0) {
+                    console.log("down");
+                    changeImg(imgIndex, iheight)
+                    imgIndex += 1;
+                }
+                else {// going up  
+                    console.log("up");
+                }
+            }
+        });
+
+        //水波紋click
+        $(".rim").on('click', function (e) {
+            $(".rim").off("click");//關閉click，避免按2次，造成圖片讀取error
+            //取大於這個數的最小整數Math.ceil(3.14) ==> 4
+            console.log("Math.ceil(" + imgIndex + "/3 ) = " + Math.ceil(imgIndex / 3));
+
+            imgIndex = Math.ceil(imgIndex / 3);//imgIndex>0代表已有滑動或滾動過，已喝過飲料
+            var itimes = 0
+            for (let index = imgIndex; index < 10; index++) {
+
+                setTimeout(function () {
+                    var i = index * 3;
+                    changeImg(i, iheight);
+                }, index * 300);
+                itimes += 1;
+            }
+            TweenLite.to($('.rim'), 6, { css: { cursor: "unset", opacity: 0 }, ease: Power2.easeOut });
+
+        });
+
+        function changeImg(imgIndex, iheight) {
+            //滾軸滾3次才會下一個動畫
+            if (imgIndex % 3 == 0) {
+                console.log(imgIndex + "/3=", imgIndex / 3);
+
+                var index = (imgIndex == 0) ? 0 : imgIndex / 3;
+                var bgPos = $('.drinking').css('background-position-y');
+                var posValue = parseInt(bgPos.substring(0, bgPos.length - 2)) + iheight;
+                console.log("posvalue=", posValue);
+
+                if (posValue > iheight) {
+                    //水波紋消失		
+                    TweenLite.to($('.rim'), 1, { css: { 'visibility': 'hidden' }, ease: Power2.easeOut });
+                    // 直到飲料喝完才顯示footer
+                    isStop = true;
+                    //取得目前未有footer的高度
+                    var oriTop = $(window).scrollTop();
+                    //延遲1s，顯示footer，主要是讓user 滾動滑鼠時，不要一次到底，停留在喝完飲料的畫面
+                    setTimeout(function () {
+                        $("footer").show();
+                    }, 1000)
+                    //1s後，footer出現，要讓footer在螢幕可視範圍的下方
+                    $(window).scrollTop(oriTop)
+                } else {
+                    // 飲料未喝完繼續喝飲料
+                    $('.drinking').css('background-position-y', posValue + 'px');
+                    if (index <= 9) {
+                        var imgNumber = index + 1;
+                        if (arrPos[index] == "right") {
+                            TweenLite.to($('.t' + imgNumber), 2, { css: { right: arrRightPos[index], display: 'block', opacity: 1 }, ease: Power2.easeOut });
+                        } else {
+                            TweenLite.to($('.t' + imgNumber), 2, { css: { left: arrRightPos[index], display: 'block', opacity: 1 }, ease: Power2.easeOut });
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+
+        // 手機滑動動作
+        if (device.mobile() || device.tablet()) {
+            $(window).on('touchmove', function (e) {
+                console.log($(window).scrollTop());
+                console.log($(window).height());
+                console.log($("body").height());
+
+                if ($(window).scrollTop() + $(window).height() >= $("body").height() - 150) {
+                    changeImg(imgIndex, iheight)
+                    imgIndex += 1;
+                }
+
+            });
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

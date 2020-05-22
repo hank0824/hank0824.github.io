@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五十嵐</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        .index_left_navbar {
+            width: 175px;
+            height: 100vh;
+            background-color: #3B465D;
+            position: fixed;
+            top: 0;
+            /* 未展開效果 */
+            left: -175px;
+            /* 展開效果 */
+            /* left: 0px;  */
+            opacity: 0;
+            z-index: 98;
+
+            /* animation: navbar_slider 1s 23s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: navbar_slider 1s 23s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: navbar_slider 1s 23s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: navbar_slider 1s 23s 1 forwards;
+            /* Opera 12+ */
+            animation: navbar_slider 1s 23s 1 forwards;
+            /* IE 10+, Fx 29+ */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-shadow: 7px 1px 10px #555555;
+            box-shadow: 7px 1px 10px #555;
+            transition: 1s;
+
+        }
+
+        .index_left_navbar.active {
+            left: 0px;
+            opacity: 1;
+            animation: none;
+        }
+
+        /* 左側navbar滑出 */
+        @keyframes navbar_slider {
+            0% {
+                opacity: 0;
+                left: -175px;
+            }
+
+            100% {
+                opacity: 1;
+                left: 0px;
+                z-index: 99;
+            }
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .cornerlogo {
+            position: fixed;
+            margin-top: 50px;
+            /* 未展開效果 */
+            left: 0px;
+            /* 展開效果 */
+            /* left: 35px; */
+            opacity: 0;
+            z-index: 99;
+            /* animation: logoshow 1s 23s 1;
+            animation-fill-mode: forwards; */
+
+
+            -webkit-animation: logoshow 1s 23s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: logoshow 1s 23s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: logoshow 1s 23s 1 forwards;
+            /* Opera 12+ */
+            animation: logoshow 1s 23s 1 forwards;
+            /* IE 10+, Fx 29+ */
+
+            transition: 1s;
+        }
+
+        .cornerlogo.active {
+            left: 35px;
+            opacity: 1;
+            animation: none;
+        }
+
+        /* 左上角log顯示 */
+        @keyframes logoshow {
+            0% {
+                opacity: 0;
+                left: -100px;
+            }
+
+            100% {
+                opacity: 1;
+                left: 35px;
+
+            }
+        }
+
+        .index_left_navbar .index_navitems {
+
+            /* 未展開效果 */
+            /* opacity: 0; */
+            color: white;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .index_left_navbar .item {
+            position: relative;
+        }
+
+        .index_navitems a:hover {
+
+            text-decoration: none;
+        }
+
+
+        .index_left_navbar .index_navitems .nav_icon.active {
+            width: 14px;
+            height: 14px;
+            background-image: url("./img/leaves.svg");
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            /* 展開 */
+            top: 10px;
+            left: -20px;
+
+            /* 未展開 */
+            /* top: 0px;
+            left: 0px;*/
+
+
+        }
+
+        /* .item:hover {
+            opacity: 1;
+        }
+ */
+
+        .index_left_navbar ul {
+            list-style: none;
+            font-size: 20px;
+            padding: 0;
+            margin: 0 auto;
+            display: table;
+            /* margin-top: 50px; */
+            color: white;
+
+        }
+
+        .index_left_navbar a {
+            color: white;
+        }
+
+        .index_left_navbar li {
+            margin-bottom: 30px;
+        }
+
+        .letterSpace {
+            letter-spacing: 0.35em;
+        }
+
+        /* banner */
+        #banner_section {
+            width: 100%;
+            /* height: 100vh; */
+            overflow: hidden;
+        }
+
+        #banner_section .bgfirst {
+            height: 100%;
+            width: 100%;
+            background-color: #3B465D;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* animation: animeBlack 3s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: animeBlack 3s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: animeBlack 3s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: animeBlack 3s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: animeBlack 3s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
+        }
+
+        /*  */
+        @keyframes animeBlack {
+            0% {
+                background-color: #3B465D;
+                opacity: 1;
+
+            }
+
+            90% {
+                background-color: #3B465D;
+                opacity: 1;
+
+            }
+
+
+            100% {
+                background-color: transparent;
+
+
+            }
+
+
+        }
+
+        /* #banner_section .main_img101 {
+            z-index: 1;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: anime101 6s 1s 1;
+        } */
+
+        /* banner101圖片縮放，只播放1次 */
+        /* @keyframes anime101 {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            0% {
+                opacity: 0;
+                transform: scale(1.1);
+                z-index: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        } */
+
+        #banner_section .bgiSlider {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+
+        #banner_section .main_img {
+            z-index: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* animation: anime 27s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: anime 27s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: anime 27s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: anime 27s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: anime 27s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
+        }
+
+        @keyframes anime {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                transform: scale(1.2);
+                z-index: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #banner_section .bglast {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+
+        #banner_section .main_imglast {
+            z-index: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            /* animation: animelast 34s 20s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: animelast 34s 20s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: animelast 34s 20s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: animelast 34s 20s 1 forwards;
+            /* Opera 12+ */
+            animation: animelast 34s 20s 1 forwards;
+            /* IE 10+, Fx 29+ */
+        }
+
+
+
+        /* banner最後一張圖片縮放 */
+        @keyframes animelast {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 1;
+                transform: scale(1.2);
+                z-index: 1;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+
+
+        #banner_section .main_img:nth-of-type(1) {
+            background-image: url("./img/banner/101.jpg");
+            animation-delay: 1.5s;
+        }
+
+        #banner_section .main_img:nth-of-type(2) {
+            background-image: url("./img/banner/leaves garden.jpg");
+            animation-delay: 7.5s;
+
+        }
+
+        #banner_section .main_img:nth-of-type(3) {
+            background-image: url("./img/banner/boba.jpg");
+            animation-delay: 13.5s;
+        }
+
+
+        #banner_section .main_imglast {
+            background-image: url("./img/banner/drinks.jpeg");
+
+        }
+
+        /* 
+        #banner_section .main_img:nth-of-type(5) {
+            background-image: url("https://image.kkday.com/v2/image/get/w_1024%2Cc_fit%2Cq_55%2Ct_jpg/s1.kkday.com/product_36933/20200204080447_bFWOD/jpg");
+            animation-delay: 24s;
+        } */
+
+        .centerlogo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            /* animation: logohidden 9s 0s 1;
+            animation-fill-mode: forwards; */
+
+            -webkit-animation: logohidden 9s 0s 1 forwards;
+            /* Safari 4+ */
+            -moz-animation: logohidden 9s 0s 1 forwards;
+            /* Fx 5+ */
+            -o-animation: logohidden 9s 0s 1 forwards;
+            /* Opera 12+ */
+            animation: logohidden 9s 0s 1 forwards;
+            /* IE 10+, Fx 29+ */
+
+            width: 400px;
+        }
+
+        /* 中間logo隱藏 */
+        @keyframes logohidden {
+            0% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        .enter {
+            position: absolute;
+            left: 50%;
+            bottom: 25px;
+            transform: translate(-50%, 0);
+            opacity: 0;
+            animation: shineEnter 5s 7.3s infinite;
+
+            -webkit-animation: shineEnter 5s 7.3s infinite;
+            /* Safari 4+ */
+            -moz-animation: shineEnter 5s 7.3s infinite;
+            /* Fx 5+ */
+            -o-animation: shineEnter 5s 7.3s infinite;
+            /* Opera 12+ */
+            animation: shineEnter 5s 7.3s infinite;
+            /* IE 10+, Fx 29+ */
+
+            cursor: pointer;
+
+        }
+
+        /* 中間logo隱藏 */
+        @keyframes shineEnter {
+            0% {
+                opacity: 0.3;
+            }
+
+            20% {
+                opacity: 0.65;
+            }
+
+            40% {
+                opacity: 0.3;
+            }
+
+            60% {
+                opacity: 0.65;
+            }
+
+            80% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 0.65;
+            }
+
+        }
+
+        /* menuicon */
+        .menu_icon {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 99;
+            opacity: 0.7;
+        }
+
+        .icon_img {
+            animation: zoom 2s 9s ease-in-out;
+            animation-iteration-count: infinite;
+
+            -webkit-animation: zoom 2s 9s infinite;
+            /* Safari 4+ */
+            -moz-animation: zoom 2s 9s infinite;
+            /* Fx 5+ */
+            -o-animation: zoom 2s 9s infinite;
+            /* Opera 12+ */
+            animation: zoom 2s 9s infinite;
+            /* IE 10+, Fx 29+ */
+
+            opacity: 0;
+        }
+
+        @keyframes zoom {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.2, 1.2);
+            }
+        }
+
+        @media(max-width: 768px) {
+            .centerlogo {
+                display: none;
+                width: 200px;
+            }
+
+            .enter {
+                display: none;
+            }
+
+            .index_left_navbar {
+                display: none;
+            }
+
+            .cornerlogo {
+                display: none;
+            }
+
+            .icon_img {
+                width: 50px;
+            }
+
+
+
+
+
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
+</head>
+
+<body>
+    <!-- 首頁左側navbar -->
+    <div class="index_left_navbar ">
+        <div class="index_navitems">
+            <ul>
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 左上角logo -->
+    <a href="index.html">
+        <div class="cornerlogo">
+            <img src="./img/cornerLogo.svg" style="width: 108px;" alt="">
+        </div>
+    </a>
+
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- banner -->
+    <section id="banner_section">
+        <div class="bgfirst">
+        </div>
+        <div class="bgiSlider">
+            <div class="main_img"></div>
+            <div class="main_img"></div>
+            <div class="main_img"></div>
+        </div>
+
+        <div class="bglast">
+            <div class="main_imglast"></div>
+        </div>
+
+    </section>
+
+    <!-- 中間logo -->
+    <div class="centerlogo">
+        <img src="./img/logo_white.svg" alt="">
+    </div>
+
+    <!-- enter icon -->
+    <div class="enter">
+        <img src="./img/banner/enter.png" alt="">
+    </div>
+    <!-- menu icon -->
+    <div class="menu_icon"><a href="Menu.html"><img class="icon_img" src="./img/menu/menu-icon.png" alt=""></a></div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+
+    <script>
+        // 左側navbar的每個項目hover會有一個icon
+        var nav_items = document.querySelectorAll(".index_navitems .item");
+        nav_items.forEach(function (item, index) {
+            $(item).hover(
+                function () {
+                    // console.log(item);
+                    var nav_icon = item.querySelector('.nav_icon');
+                    console.log(nav_icon);
+                    $(nav_icon).addClass("active");
+                }, function () {
+                    // console.log(item);
+                    var nav_icon = item.querySelector('.nav_icon');
+                    console.log(nav_icon);
+                    $(nav_icon).removeClass("active");
+                }
+            );
+
+        });
+
+        // // 手機版navbar的每個項目hover會有一個icon
+        // var nav_items = document.querySelectorAll(".mobile_navbar_fully .mobile_items");
+        // nav_items.forEach(function (item, index) {
+        //     $(item).mouseout(function () {
+        //         var nav_icon = item.querySelector('.nav_icon');
+        //         console.log(nav_icon);
+        //         $(nav_icon).addClass("active");
+        //     });
+
+        // });
+
+
+        var t1 = new TimelineMax();
+        t1.fromTo($('.mobile_navbar'), 1, { css: { top: "-55.25px" } }, { css: { top: "0px" } }, 6.7)
+
+        $(".enter").click(function () {
+            $('.index_left_navbar').addClass("active");
+            $('.cornerlogo').addClass("active");
+            $(".enter").hide();
+        });
+
+        function linkfunction(svalue) {
+            window.location.href = svalue;
+
+        }
+
+
+// $(document).on("click touchstart tap", ".mobile_navbar_fully .mobile_items .item:nth-child(1)", function (){
+//     window.location.href="./about.html"     
+// });
+
+        // // 手機版navbar的每個項目hover會有一個icon
+        // var arr_mobile_http = ['about.html', 'featured.html', 'news.html', 'top.html', 'store_location_mobile.html', 'contact.html']
+
+        // // 此处是 jQuery 事件...
+        // var nav_items = document.querySelectorAll(".mobile_navbar_fully .mobile_items .item");
+        // nav_items.forEach(function (item, index) {
+
+        //     $(item).on('click touchstart tap', function () {
+        //         window.location.href = arr_mobile_http[index];
+        //     });
+
+        // });
+
+    </script>
+</body>
+
+</html>
