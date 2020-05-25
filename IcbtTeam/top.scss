@@ -1,0 +1,65 @@
+$font-family:'微軟正黑體';
+$font-wight:lighter;
+$color_white:white;
+$bgcolorLR1:#9DB6BB;
+$bgcorlorLR2:#3F494B;
+$bgcolorblue1: #3C586E;
+$bgcolorblue2:#1E2C35;
+
+body{
+    overflow-x: hidden;
+}
+
+.right_content5 {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+    .myContainer{
+        width: 100%;
+        .row{
+            padding: 0;
+            width: 100%;
+            margin-right: 0px;
+            margin-left: 0px;
+            .col{
+                padding: 0;
+            }
+        }
+    }
+}
+
+.bg_red{
+    height: 100vh;
+    background-color:$bgcolorLR1 ;
+    &:hover{
+        background-color:$bgcorlorLR2;
+        .bgm1{
+            filter: brightness(40%);
+            transition: 0.5s;
+        }
+        #text1{
+            opacity: 1;
+        }
+    }
+}
+
+.bg_blue{
+    height: 100vh;
+    background-color:$bgcolorblue1;
+    transition: 0.5s;
+    &:hover{
+        background-color:$bgcolorblue2;
+        transition: 0.5s;
+        .bgm2{
+        filter:brightness(40%);
+        transition: 0.5s;
+        }
+        #text2{
+            opacity: 1;
+        }
+    }
+}
+.bg_gray {
+    height: 100vh;
+    background-color:$bgcolorLR1 ;
+    transition: 0.5s;
+}

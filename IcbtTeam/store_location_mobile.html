@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門市據點</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- 樣版css -->
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="store_location_mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 字形 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        /* 自訂樣式 */
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167190227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167190227-1');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="left_navbar  ">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+        </a>
+
+        <div class="navitems">
+            <ul style="margin-top: 50px; font-size:20px;">
+                <div class="item">
+                    <a href="about.html">
+                        <div class="nav_icon"></div>
+                        <li>關於五十嵐</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="featured.html">
+                        <div class="nav_icon"></div>
+                        <li>五十嵐嚴選</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="news.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">最新消息</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="top.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">精選飲品</li>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="store_location.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">門市據點</li>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="contact.html">
+                        <div class="nav_icon"></div>
+                        <li class="letterSpace">聯絡我們</li>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版上方固定的navbar -->
+    <div class="mobile_navbar ">
+
+        <div class="logo"><a href="index.html"><img src="./img/cornerLogo.svg" width="47px"></a></div>
+
+        <a href="javascript:;" class="main">
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+            <span class='hamburger'></span>
+        </a>
+
+
+    </div>
+
+    <!-- 手機版上方navbar滿版 -->
+    <div class="mobile_navbar_fully  ">
+        <a href="index.html">
+            <div class="logo d-flex justify-content-center">
+                <img src="./img/cornerLogo.svg" style="width:127px">
+
+            </div>
+
+        </a>
+        <div class="mobile_items">
+            <ul class="fontSize16">
+                <div class="item">
+                    <!-- <a href="about.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>關於五十嵐</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="featured.html"> -->
+                    <div class="nav_icon"></div>
+                    <li>五十嵐嚴選</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="news.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">最新消息</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="top.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">精選飲品</li>
+                    <!-- </a> -->
+                </div>
+                <div class="item">
+                    <!-- <a href="store_location.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace">門市據點</li>
+                    <!-- </a> -->
+                </div>
+
+                <div class="item">
+                    <!-- <a href="contact.html"> -->
+                    <div class="nav_icon"></div>
+                    <li class="letterSpace" style="padding-bottom: 0;">聯絡我們</li>
+                    <!-- </a> -->
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- menu icon -->
+    <div class="menu_icon">
+        <a href="Menu.html">
+            <img class="icon_img" src="./img/menu/menu-icon.png" alt="">
+        </a>
+    </div>
+    <!-- drink -->
+    <div class="drink">
+        <img class="drinkimg" src="./img/menu/menu-icon(DRINK).png" alt="">
+    </div>
+    <section class="right_content">
+        <div class="container-fluid">
+            <div data-aos="zoom-in-up">
+                <div class="row justify-content-center">
+                    <div class="col-12-auto col-sm-12-auto">
+                        <h3>北部門店</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">基隆廟口店</p>
+                        <p class="middle">02-24211682</p>
+                        <p>基隆市仁愛區<br>愛四路1號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">士林天母店</p>
+                        <p class="middle">02-28711101</p>
+                        <p>台北市士林區<br> 天母北路3號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">新北市總店</p>
+                        <p class="middle">02-29572501</p>
+                        <p>新北市板橋區<br>中山路二段159號</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-around flex-wrap box1_display">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">士林文林店</p>
+                        <p class="middle">02-28815922</p>
+                        <p>台北市士林區<br>文林路191號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big"> 土城明德店</p>
+                        <p class="middle">02-22627000</p>
+                        <p>新北市土城區<br>明德路一段57號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">淡水中山店</p>
+                        <p class="middle">02-26261162</p>
+                        <p>新北市淡水區<br>水碓街5號</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around flex-wrap box1_display">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">中壢中原店</p>
+                        <p class="middle">03-4564366</p>
+                        <p>桃園市中壢區<br>日新路8號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">新竹馬偕店</p>
+                        <p class="middle">03-5165006</p>
+                        <p>新竹市東區<br>水源街61號1F
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">竹北正西店</p>
+                        <p class="middle">03-5165006</p>
+                        <p>新竹縣竹北市<br>中正西路124號
+                        </p>
+                    </div>
+                </div>
+
+                <div id="btn" class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                        more
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-delay="500">
+                <div class="row justify-content-center">
+                    <div class="col-12-auto col-sm-12-auto">
+                        <h3>中部門店</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">竹南中正店</p>
+                        <p class="middle">037-552577</p>
+                        <p>苗栗縣竹南鎮<br>中正路<br>263-1號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台中公益店</p>
+                        <p class="middle">04-2327-2655</p>
+                        <p>台中市南屯區<br>公益路二段158號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">斗六中山店</p>
+                        <p class="middle">05-5335958</p>
+                        <p>雲林縣斗六市<br>中山路292號</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-around flex-wrap box2_display">
+
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">苗栗苑裡店
+                        </p>
+                        <p class="middle">037-855866
+                        </p>
+                        <p>苗栗縣苑裡鎮<br>天下路51號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台中學士店</p>
+                        <p class="middle">04-2206-8891
+                        </p>
+                        <p>台中市北區<br>學士路45號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台中健行店
+                        </p>
+                        <p class="middle">04-2208-3365
+                        </p>
+                        <p>台中市北區<br>健行路516號
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around flex-wrap box2_display">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">彰化中正店
+                        </p>
+                        <p class="middle"> 04-723-4229
+                        </p>
+                        <p>彰化縣彰化市<br>中正路二段150號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">鹿港中山店
+                        </p>
+                        <p class="middle"> 04-7752178
+                        </p>
+                        <p>彰化縣鹿港鎮<br>中山路159號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">南投集集店
+                        </p>
+                        <p class="middle"> 04-92761709
+                        </p>
+                        <p>南投縣集集鎮<br>民生路111號
+                        </p>
+                    </div>
+                </div>
+                <div id="btn" class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                        more
+                    </button>
+                </div>
+                <hr>
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="row justify-content-center">
+                    <div class="col-12-auto col-sm-12-auto">
+                        <h3>南部門店</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">嘉義民雄店</p>
+                        <p class="middle">05-2263022</p>
+                        <p>嘉義縣民雄鄉<br>東榮路15號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台南安平店</p>
+                        <p class="middle">06-2505252</p>
+                        <p>台南市安平區<br>安平路376-1號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">恆春墾丁店</p>
+                        <p class="middle">08-8863869</p>
+                        <p>屏東縣恆春鎮<br>墾丁路185號</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around flex-wrap box3_display">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">嘉義吳鳳店
+                        </p>
+                        <p class="middle"> 05-2303337
+                        </p>
+                        <p>嘉義市<br>吳鳳南路591號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">嘉義中山店
+                        </p>
+                        <p class="middle"> 05-2303337
+                        </p>
+                        <p>嘉義市<br>中山路57號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">中西赤崁店
+                        </p>
+                        <p class="middle"> 06-2238688
+                        </p>
+                        <p>台南市中西區<br>民族路2段260號
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around flex-wrap box3_display">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">民生民權店
+                        </p>
+                        <p class="middle">
+                            07-2222029
+                        </p>
+                        <p>高雄市新興區<br>民生一路156號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">三民高應大店
+                        </p>
+                        <p class="middle">
+                            07-3985958
+                        </p>
+                        <p>高雄市三民區<br>大昌二路555號
+                        </p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">枋寮中山店
+                        </p>
+                        <p class="middle">
+                            08-8786700
+                        </p>
+                        <p>屏東縣枋寮鄉<br>中山路205號
+                        </p>
+                    </div>
+                </div>
+                <div id="btn" class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                        more
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="row justify-content-center">
+                    <div class="col-12-auto col-sm-12-auto">
+                        <h3>東部門店</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台東新生店</p>
+                        <p class="middle">089-345875</p>
+                        <p>台東縣台東市<br>新生路532號</p>
+                    </div>
+                    <div class="col-6-auto col-sm-4-auto col-md-4-auto box_temp">
+                        <p class="big">台東中華店</p>
+                        <p class="middle">089-333293</p>
+                        <p>台東縣台東市<br>中華路一段625號</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2020 五十嵐 DESIGN BY ICBT
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <!-- GSAP - GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- parallax js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 樣版js -->
+    <script src="template.js"></script>
+    <script src="store_location_mobile.js"></script>
+
+    <script>
+        // 程式碼
+    </script>
+
+</body>
+
+</html>

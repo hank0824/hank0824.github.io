@@ -1,0 +1,270 @@
+  /* 字體改變 */
+  /* *{
+    font-family: "Noto Sans TC', sans-serif";
+  } */
+  /* 自訂樣式 */
+  h1{
+    text-align: center;
+    /* position: relative; */
+    /* top: 145px; */
+    font-size: 40px;
+    padding:110px 0 34.5px 0;
+    color: #132951;
+    font-family: "Noto Sans TC', sans-serif";
+}
+.new{
+    /* position: relative; */
+    width: 500px;
+    /* height: 30px; */
+    margin: auto;
+    /* top: 179px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Noto Serif";
+}
+.border1{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+}
+.border2{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+}
+h5{
+    /* text-align: center;   */
+    margin: 0;
+    font-size: 18px;
+    color: #3B465D;
+}
+.right_content{
+    height:100vh;
+    position: relative;
+    background-color:#F7B9A4;
+}
+.swiper-container {
+position: absolute;
+top:55%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 80%;
+}
+.swiper-slide {      
+background-position: center;
+background-size: cover;
+height: 0;
+padding-bottom: calc(100%/3 - 60px);
+}
+.swiper-pagination{
+position: absolute;
+top: 85%;
+left: 46%;
+display: flex;
+justify-content: space-around;
+width: 180px;
+}
+.swiper-pagination-bullet-active {
+background-color: #132951;
+}
+.swiper-pagination-bullet{
+height: 20px;
+width: 20px;
+}
+.swiper-button-next{
+color: #3C586E;
+position: absolute;
+right: 5%;
+top: 55% ;
+outline: none;
+}
+.swiper-button-prev{
+ color: #3C586E;
+position: absolute;
+left: 5%;
+top: 55% ;
+outline: none;
+}
+span:focus {
+    outline: none;
+}
+.img1:hover{
+    background-image: url("./img/news/新品上市\(圖\).jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.img2:hover{
+    background-image: url("./img/news/疾病退散\(圖\).jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.img3:hover{
+    background-image: url("./img/news/地球日\(圖\).jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.img4:hover{
+    background-image: url("./img/news/新品上市\(圖\).jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.img5:hover{
+    background-image: url("./img/news/疾病退散\(圖\).jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.img6:hover{
+    background-image: url("./img/news/地球日\(圖\).jpg") !important;
+    background-position: initial;
+    background-size: cover;
+}
+.div_shadow
+{
+box-shadow: 7px 7px 8px #333333;
+-webkit-box-shadow: 7px 7px 8px #333333;
+-moz-box-shadow: 7px 7px 8px #333333;
+}
+@media screen and (max-width: 1200px) {
+    .swiper-slide {      
+        padding-bottom: calc(100%/2 - 60px);
+        }
+        .swiper-button-prev{
+            left: 5%;
+        }
+            .swiper-button-next{
+                right: 5%;
+                }
+                .swiper-pagination{
+                    left: 43%;
+                    }
+}
+@media screen and (max-width: 1536px){
+    .swiper-container {
+        top:60%;
+        }
+    .swiper-slide {     
+        padding-bottom: calc(100%/3 - 100px);
+        }
+        .swiper-button-prev{
+           top: 60;
+        }
+            .swiper-button-next{
+                top: 60%;
+                }
+        .swiper-pagination{
+            top: 90%;
+            left: 44%;
+            }
+}
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        top:55%;
+        left: 50%;
+        width: 65%;
+        }
+    .swiper-slide {      
+        padding-bottom: calc(100% - 10px);
+        }
+        .swiper-button-prev{
+           left: 5%;
+        }
+        .swiper-button-next{
+            right: 5%;
+            }
+        .swiper-pagination{
+            left: 39%;
+            }
+                .swiper-pagination-bullet{
+                    height: 20px;
+                    width: 20px;
+                    }
+}
+@media screen and (max-width: 520px) {
+    .swiper-container {
+        top:60%;
+        left: 50%;
+        width: 50%;
+        }
+        .swiper-button-prev{
+            top:55%;
+            left: 3%;
+         }
+         .swiper-button-next{
+            right: 3%;
+            top:55%;
+            }
+         .swiper-pagination{
+             left: 25%;
+             top:80%;
+             }
+             .swiper-pagination-bullet{
+                height: 15px;
+                width: 15px;
+                }
+    
+    .swiper-slide {      
+        padding-bottom: calc(100% - 0px);
+        }
+    .new{
+        width: 300px;
+    }
+    .border1{
+        width: 60px;
+    }    
+            .border2{
+                width: 60px;
+            }
+}
+@media screen and (max-width: 375px) {
+
+  .swiper-container {
+        top:60%;
+        width: 50%;
+        }
+        .swiper-button-prev{
+            top:60%;
+            left: 5%;
+         }
+         .swiper-button-next{
+            top:60%;
+            right: 5%;
+            }
+            .swiper-pagination{
+                width: 180px;
+                top: 85%;
+                left: 28%;
+            }
+            .swiper-pagination-bullet{
+                height: 10px;
+                width: 10px;
+                }
+                .new{
+                    width: 180px;
+                } 
+                h5{
+                    font-size: 15px;
+                }
+                .border1{
+                    width: 30px;
+                }    
+                        .border2{
+                            width: 30px;
+                        }
+}
+@media screen and (max-width: 320px){
+    .swiper-container {
+        top: 65%;
+        }
+        .swiper-button-prev{
+            top:65%;
+           
+         }
+         .swiper-button-next{
+            top:65%;
+        
+            }
+    .swiper-pagination{
+        top: 90%;
+    }
+}

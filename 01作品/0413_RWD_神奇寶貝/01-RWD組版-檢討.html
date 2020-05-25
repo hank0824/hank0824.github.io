@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            width: 300px;
+            height: 100vh;
+            background-color: #999;
+            float: left;
+        }
+
+        .navbar .logo {
+            width: 150px;
+            height: 150px;
+            background-color: #72e;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .logo{
+            background-image: url(img/logo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nav_items_mobi {
+            width: 60px;
+            height: 60px;
+            background-color: #23f;
+            margin-left: 20px;
+            margin-top: 25px;
+            display: none;
+        }
+
+        .navbar .nav_items {
+            padding: 0;
+            margin: 0 auto;
+            display: table;
+            margin-top: 80px;
+        }
+
+        .nav_items .nav_btn {
+            list-style: none;
+            margin-bottom: 10px;
+            font-size: 20px
+        }
+
+        .main {
+            width: calc(100% - 300px);
+            height: 100vh;
+            background-color: #222;
+            float: left;
+        }
+
+        .main .block {
+            max-width: 900px;
+            height: 600px;
+            background-color: #444;
+            margin: 0 auto;
+            margin-top: calc(50vh - 300px);
+        }
+
+        .block .box {
+            width: calc((100% - 20px) / 3);
+            height: 100%;
+            
+            float: left;
+        }
+
+        .block .a {
+            margin-right: 10px;
+            
+        }
+
+        .block .b {
+            margin-right: 10px;
+        }
+#a{
+    background-image: url(img/moon.gif);
+            background-size: cover;
+            background-position: center;
+}
+#b{
+    background-image: url(img/pokemo.gif);
+            background-size: cover;
+            background-position: center;
+}
+#c{
+    background-image: url(img/poke.gif);
+            background-size: cover;
+            background-position: center;
+}
+        @media screen and (max-width: 1280px) {
+            .main .block {
+                margin-right: 50px;
+                margin-left: 50px;
+            }
+
+            .block .box {
+                margin: 0;
+            }
+
+            .block .a {
+                width: 100%;
+                height: calc(50% - 5px);
+                margin-bottom: 10px;
+            }
+
+            .block .b {
+                width: calc(50% - 5px);
+                height: calc(50% - 5px);
+                margin-right: 10px;
+            }
+
+            .block .c {
+                width: calc(50% - 5px);
+                height: calc(50% - 5px);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                width: 100%;
+                height: 100px;
+                position: relative;
+            }
+
+            .navbar .logo {
+                margin: 0;
+                height: 80px;
+                width: 80px;
+                float: left;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            .navbar .nav_items {
+                position: absolute;
+                margin: 0;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .nav_items .nav_btn {
+                display: inline-block;
+                margin: 0;
+                margin-left: 20px;
+            }
+
+            .main {
+                width: 100%;
+            }
+
+            .main .block {
+                margin: 100px 20px 0 20px;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .nav_items_mobi {
+                display: block;
+            }
+
+            .nav_items .nav_btn {
+                display: none;
+            }
+
+            .navbar .logo {
+                /* height: 80px;
+                width: 80px; */
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-65%);
+                
+            }
+
+            .block .box{
+                width: 100%;
+                height: 40%;
+                top: 0 px;
+            }
+            .block .a {
+                height: calc((100%-5px)/3);
+               
+                margin-bottom: 0px;
+            }
+
+            .block .b , .c {                
+                
+                height: calc((100%-5px)/3);
+                margin-bottom: 0px;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav_items_mobi"></div>
+        <div class="logo"></div>
+        <ul class="nav_items">
+            <a href=""><li class="nav_btn">超夢</li></a>
+            <a href=""><li class="nav_btn">路基亞</li></a>
+            <a href=""><li class="nav_btn">皮卡丘</li></a>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="block">
+            <div id="a" class="box a"></div>
+            <div id="b" class="box b"></div>
+            <div id="c" class="box c"></div>
+        </div>
+    </div>
+</body>
+
+</html>

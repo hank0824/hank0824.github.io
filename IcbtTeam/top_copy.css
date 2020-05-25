@@ -1,0 +1,149 @@
+
+
+.row,
+.col {
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* 右邊內容 */
+.right_content5 {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+}
+.myContainer {
+    width: 100%;
+}
+/* 初始化 */
+.right_content5 .myContainer .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.row{
+   width: 100%;
+}
+.bg_red{
+    height: 100vh;
+    background-color: #F7B9A4;
+    
+}
+.bg_red:hover{
+    background-color: #634A42;
+}
+.bg_red:hover .bgm1{
+filter: brightness(40%);
+transition: 1s;
+}
+.bg_red:hover #text1{
+    opacity: 1;
+    transition: 2s;
+    }
+
+.bg_blue{
+    height: 100vh;
+    background-color:#F7B9A4;
+    transition: 1s;
+}
+.bg_blue:hover{
+    background-color:#634A42;
+    transition: 1s;
+}
+.bg_blue:hover .bgm2{
+    filter: brightness(40%);
+    transition: 1s;
+}
+.bg_blue:hover #text2{
+        opacity: 1;
+        transition: 2s;
+}
+.bg_gray{
+    height: 100vh;
+    background-color:#F7B9A4;
+    transition: 1s;
+}
+.bg_gray:hover{
+    background-color: #634A42;
+    transition: 1s;
+}
+.bg_gray:hover .bgm3{
+    filter: brightness(40%);
+    transition: 1s;
+}
+.bg_gray:hover #text3{
+        opacity: 1;
+        transition: 2s;
+}
+.bgm1,.bgm2,.bgm3{
+    height:70%;
+    width: 80%;
+    margin-top: 35%;
+    margin-left: 10%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bgm1{
+    background-image: url(img/drinks/阿華田拿鐵.png);
+}
+.bgm2{
+    background-image: url(img/drinks/珍珠奶茶.png);
+}
+.bgm3{
+    background-image: url(img/drinks/紅茶拿鐵.png);
+}
+
+
+
+
+
+
+/* 圖片內的文字 */
+.text {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute !important;
+    color: white;
+    font-family: "微軟正黑體";
+    font-weight: lighter;
+    opacity: 0;
+    position: relative;
+}
+.text h1{
+    font-size: 40pt;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.text p{
+    margin: 0 auto;
+    font-size: 22px;
+    width: 67%;
+    margin-top: 45px;
+    text-align: justify;
+    letter-spacing:0.15em;
+    word-break: break-all;
+    font-family: "微軟正黑體";
+    font-weight: lighter;
+    color: white;
+}
+
+@media(max-width:768px){
+    .left_navbar{
+        display: none;
+}
+.right_content5{
+    width: 100%;
+    margin-left: 0;
+}
+footer{
+    margin: 0;
+    width: 100%;
+}
+}
