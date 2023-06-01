@@ -1,0 +1,55 @@
+
+h1,
+form {
+
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+input{
+    border: 1px solid rgb(165, 149, 142);
+    border-radius: 3px;
+    padding: 5px;
+}
+/* valid 驗證通過時的樣式設定 */
+input[type="email"]:focus:valid,
+input[type="text"]:focus:valid,
+input[type="tel"]:focus:valid,
+input[type="password"]:focus:valid {
+    background-color: lightgreen;
+}
+
+/*  :invalid 驗證不通過時的樣式設定 */
+input[type="email"]:focus:invalid,
+input[type="text"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    background-color: pink;
+}
+
+/*  驗證通過時 輸入框後面顯示 ✓ */
+input[type="email"]:focus:valid+span::after,
+input[type="text"]:focus:valid+span::after,
+input[type="tel"]:focus:valid+span::after,
+input[type="password"]:focus:valid+span::after {
+    content: "✓";
+    color: green;
+}
+
+/*  驗證不通過時 輸入框後面顯示 ✖ */
+input[type="email"]:focus:invalid+span::after,
+input[type="text"]:focus:invalid+span::after,
+input[type="tel"]:focus:invalid+span::after,
+input[type="password"]:focus:invalid+span::after {
+    content: "✖ 驗證不通過，請檢查欄位 ";
+    color: red;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+button:nth-of-type(2) {
+    margin-left: 5px;
+}
