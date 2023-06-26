@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./_css/all.css">
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./_js/bootstrap.bundle.js"></script>
+
+    <style>
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+
+        .carousel-inner {
+            height: 80vh;
+        }
+
+        .card-text {
+            color: rgb(0, 0, 0);
+        }
+
+        .card {
+            overflow: hidden;
+        }
+
+        .card img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        .card img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+
+
+        @media screen and (max-width:576px) {
+            .carousel-inner {
+                height: 200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class=" navbar navbar-expand-lg navbar-light bg-info  ">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="./index.html"><span class="material-icons">
+                    <span class="material-symbols-outlined text-light">
+                        home
+                    </span>
+                </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./about.html">關於周杰倫</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            歷年專輯
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">Jay</a></li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">范特西</a></li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">八度空間</a></li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">11月的蕭邦</a></li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">七里香</a></li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">12新作</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="./albums_over_the_years.html">其他</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="nav-item ">
+                    <ul class="d-flex">
+                        <li style="list-style: none;" class="p-2 me-auto">
+                            <img style="width: 20px; height:20px;" src="./img/icons8-user-64.png" alt="">
+                            <a href="./register.html">會員註冊</a>
+                        </li>
+                        <li style="list-style: none;" class="p-2 me-auto">
+                            <img style="width: 20px; height:20px;" src="./img/icons8-shopping-cart-50.png" alt="">
+                            <a href="./shoping.html">購買專輯</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="a" class="container mt-3">
+        <!-- Carousel -->
+        <div style="margin-top: 75px;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+            data-bs-interval="2000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/img1.jpg" class="d-block w-100 img-fluid figure-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img2.jpg" class="d-block w-100 img-fluid figure-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img3.jpg" class="d-block w-100 img-fluid figure-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr>
+        <h1>精選歌單</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/GrVwHfyJSVBLYBibEb"><img src="./img/最偉大的作品.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/GrVwHfyJSVBLYBibEb">
+                            <h5 class="card-title text-center">最偉大的作品</h5>
+
+                        </a>
+                        <p class="card-text ">當一件偉大的作品被創作出來時，藝術家並不會知道自己成就了一整個藝術時代</p>
+                        <p class="card-text ">
+                            周杰倫睽違六年驚喜之作！
+                            專輯封面遠赴「天空之城」法國聖米歇爾山實地取景，壯闊入鏡
+                            親自飛往世界各地執導ＭＶ
+                            足跡遍及巴黎莎瑪麗丹La Samaritaine、
+                            澳洲粉色沙灘、異國沙漠公路、古巴
+                            將腦中的奇思狂想變成一幅幅畫面！</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/WsvrJoazjmG2DgP_1q"><img src="./img/周杰倫地表最強世界巡迴演唱會.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/WsvrJoazjmG2DgP_1q">
+                            <h5 class="card-title text-center">周杰倫地表最強世界巡迴演唱會</h5>
+
+                        </a>
+                        <p class="card-text">地表最強音樂引力
+                            太空人也擋不住！
+                            用音樂出發，建構出神入化的感官新宇宙！</p>
+                        <p class="card-text text-center">周杰倫
+                            「地表最強THE INVINCIBLE」演唱會
+                            DVD版.藍光版
+                            太空銀.宇宙黑 特殊造型鐵盒包裝
+                            11/01重磅回歸地表發行</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/8n1L7efEHSCv3MUBwW"><img src="./img/周杰倫的床邊故事.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/8n1L7efEHSCv3MUBwW">
+                            <h5 class="card-title text-center">周杰倫的床邊故事</h5>
+
+                        </a>
+                        <p class="card-text text-center">夜深了
+                            貓頭鷹出沒
+                            數完第一千零一個尖叫聲
+                            開始聽
+                            周杰倫 的床邊故事</p>
+                        <p class="card-text text-center">
+                            等待是值得的！2016年周杰倫終於推出全新專輯「周杰倫的床邊故事」，每次出輯都顛覆大家想像的周杰倫，這次的「床邊故事」，當然精采絕倫不讓你睡！整張專輯就像是本有聲書，由周杰倫說書，訴說10個最與眾不同、充滿想像的音樂故事！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/GptWH1zjWop21-Mg1X"><img src="./img/哎呦，不錯哦.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/GptWH1zjWop21-Mg1X">
+                            <h5 class="card-title text-center">哎呦，不錯哦</h5>
+
+                        </a>
+                        <p class="card-text text-center">以幽默拉開序幕，給你「鞋子特大號」！
+                            幽默是挫折中優雅的禮貌 給你Jay特大號的幽默！</p>
+                        <p class="card-text text-center">
+                            今年度最特大號、最高度期待的專輯--周杰倫「哎呦，不錯哦」，首波隆重登場的「鞋子特大號」，主角就是默片喜劇大師卓別林！留著一撇小鬍子，穿著一件窄小的禮服、特大的褲子和特大的黑鞋、戴著一頂圓頂硬禮帽、手持一根棒棒糖拐杖，憑肢體語言就能逗笑觀眾的卓別林，堪稱是神級幽默，至今無人能超越，不僅是鞋子特大號，連幽默也要特大號！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/9YMqiF0HpTG8IZrErD"><img src="./img/12新作.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/9YMqiF0HpTG8IZrErD">
+                            <h5 class="card-title text-center">十二新作</h5>
+
+                        </a>
+                        <p class="card-text text-center">當時光敲第12響時，是該聽周杰倫的時候了…
+                            周杰倫2012最新專輯 「十二新作」
+                            2012年12月 28日 壓軸登場</p>
+                        <p class="card-text text-center">Jay.12的巧合與奧妙
+                            出道第12年
+                            第12張專輯
+                            專輯收錄12首
+                            預購日期2012的12月12日</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.kkbox.com/tw/tc/album/GmxeMXPkte5pAo989E"><img src="./img/驚嘆號.jpg"
+                            class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.kkbox.com/tw/tc/album/GmxeMXPkte5pAo989E">
+                            <h5 class="card-title text-center">驚嘆號</h5>
+
+                        </a>
+                        <p class="card-text text-center">靠自己創作跑道 才是王道！
+                            2011 周杰倫第!!號作品【驚嘆號】
+                            炫技玩樂出神入化 滿載勵志.傳承.歡樂.療傷
+                            用他的音樂獲得力量與幽默 向未來的逆境熱血前進！
+                            20! ! / ! ! / ! ! 驚嘆連連 航向音樂新紀元</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="back-top " title="回頂部"><a href="#a">TOP</a></div>
+</body>
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 施人豪製作
+
+    </div>
+
+</footer>
+
+</html>
