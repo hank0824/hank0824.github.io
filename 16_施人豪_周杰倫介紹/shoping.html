@@ -292,10 +292,10 @@
                 sumMoney += (parseFloat(prices[i].value) * Math.pow(10, 2) * parseInt(counts[i].value) / Math.pow(10, 2));
             }
             if (sumMoney == 0) {
-                alert('請確認金額');
+                alert('請確認訂單是否正確');
             }
             else {
-                alert('訂單已送出，感謝訂購');
+                alert('訂單已送出，感謝訂購，本次購買金額為$' + sumMoney);
                 window.location.reload();
             }
         }
