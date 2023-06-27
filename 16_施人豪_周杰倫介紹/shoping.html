@@ -285,8 +285,19 @@
 
         //跳出訊息
         function showMsg() {
-            alert('訂單已送出，感謝訂購');
-            window.location.reload();
+            var counts = document.getElementsByName("amount");
+            var prices = document.getElementsByName("price");
+            var sumMoney = 0;
+            for (var i = 0; i < counts.length; i++) {
+                sumMoney += (parseFloat(prices[i].value) * Math.pow(10, 2) * parseInt(counts[i].value) / Math.pow(10, 2));
+            }
+            if (sumMoney == 0) {
+                alert('請確認金額');
+            }
+            else {
+                alert('訂單已送出，感謝訂購');
+                window.location.reload();
+            }
         }
     </script>
 </body>
