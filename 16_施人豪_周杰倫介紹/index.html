@@ -101,7 +101,7 @@
                     <ul class="d-flex">
                         <li style="list-style: none;" class="p-2 me-auto">
                             <img style="width: 20px; height:20px;" src="./img/icons8-user-64.png" alt="">
-                            <a href="./register.html">會員註冊</a>
+                            <a href="#" id="showPopupBtn" class="btn">登入/註冊</a>
                         </li>
                         <li style="list-style: none;" class="p-2 me-auto">
                             <img style="width: 20px; height:20px;" src="./img/icons8-shopping-cart-50.png" alt="">
@@ -149,6 +149,44 @@
             </button>
         </div>
         <hr>
+        <div class="login-popup" id="loginPopup" style="display: none;">
+            <div id="closePopupBtn" class="close-btn">X</div>
+            <div class="form-wrap">
+                <div class="tabs">
+                    <h3 class="signup-tab"><a href="#signup-tab-content">註冊</a></h3>
+                    <h3 class="login-tab"><a class="active" href="#login-tab-content">登入</a></h3>
+                </div><!--.tabs-->
+    
+                <div class="tabs-content">
+                    <div id="signup-tab-content">
+                        <form class="signup-form" action="" method="post">
+                            <input type="text" class="input" id="user_name" autocomplete="off" placeholder="姓名">
+                            <input type="email" class="input" id="user_email" autocomplete="off" placeholder="E-mail">
+                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="密碼">
+                            <input type="submit" class="btn btn-right" value="註冊">
+                        </form><!--.login-form-->
+    
+                    </div><!--.signup-tab-content-->
+    
+                    <div id="login-tab-content" class="active">
+                        <form class="login-form" action="" method="post">
+                            <input type="text" class="input" id="user_login" autocomplete="off" placeholder="帳號">
+                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="密碼">
+                            <p class="forget"><a href="#">忘記密碼</a></p>
+                            <div class="help-text">
+                            </div><!--.help-text-->
+                            <input type="submit" class="btn btn-right" value="登入">
+    
+    
+                        </form><!--.login-form-->
+                    </div><!--.login-tab-content-->
+    
+                </div><!--.tabs-content-->
+    
+    
+            </div><!--.form-wrap-->
+    
+        </div>
         <h1>精選歌單</h1>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -279,6 +317,7 @@
     </div>
 
     <div class="back-top " title="回頂部"><a href="#a">TOP</a></div>
+    <script src="./js/all.js"></script>
 </body>
 <footer class="bg-light text-center text-lg-start">
 
