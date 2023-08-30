@@ -17,16 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <style>
-        .navbar {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 999;
-        }
-
         .carousel-inner {
             height: 80vh;
         }
@@ -100,12 +93,12 @@
 
                 </ul>
                 <div class="nav-item ">
-                    <ul class="d-flex">
-                        <li style="list-style: none;" class="p-2 me-auto">
+                    <ul class="d-flex me-auto">
+                        <li style="list-style: none;" class="p-2 mt-3 ">
                             <img style="width: 20px; height:20px;" src="./img/icons8-user-64.png" alt="">
-                            <a href="#" id="showPopupBtn" class="btn">登入/註冊</a>
+                            <a href="#" id="showPopupBtn">登入/註冊</a>
                         </li>
-                        <li style="list-style: none;" class="p-2 me-auto">
+                        <li style="list-style: none;" class="p-2 mt-3">
                             <img style="width: 20px; height:20px;" src="./img/icons8-shopping-cart-50.png" alt="">
                             <a href="./shoping.html">購買專輯</a>
                         </li>
@@ -151,43 +144,44 @@
             </button>
         </div>
         <hr>
+        <!-- 登入註冊 -->
         <div class="login-popup" id="loginPopup" style="display: none;">
-            <div id="closePopupBtn" class="close-btn">X</div>
             <div class="form-wrap">
                 <div class="tabs">
+                    <div id="closePopupBtn" class="close-btn">X</div>
                     <h3 class="signup-tab"><a href="#signup-tab-content">註冊</a></h3>
                     <h3 class="login-tab"><a class="active" href="#login-tab-content">登入</a></h3>
                 </div><!--.tabs-->
-    
+
                 <div class="tabs-content">
                     <div id="signup-tab-content">
-                        <form class="signup-form" action="" method="post">
+                        <form class="signup-form" action="" >
                             <input type="text" class="input" id="user_name" autocomplete="off" placeholder="姓名">
                             <input type="email" class="input" id="user_email" autocomplete="off" placeholder="E-mail">
                             <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="密碼">
-                            <input type="submit" class="btn btn-right" value="註冊">
+                            <button type="submit" class="submult">註冊</button>
+                            
                         </form><!--.login-form-->
-    
+
                     </div><!--.signup-tab-content-->
-    
+
                     <div id="login-tab-content" class="active">
-                        <form class="login-form" action="" method="post">
+                        <form class="login-form" action="" >
                             <input type="text" class="input" id="user_login" autocomplete="off" placeholder="帳號">
                             <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="密碼">
                             <p class="forget"><a href="#">忘記密碼</a></p>
                             <div class="help-text">
                             </div><!--.help-text-->
-                            <input type="submit" class="btn btn-right" value="登入">
-    
-    
+                            <button type="submit" class="submult">登入</button>
+                            <!-- <input type="submit" class="btn btn-right submult" value="登入"> -->
                         </form><!--.login-form-->
                     </div><!--.login-tab-content-->
-    
+
                 </div><!--.tabs-content-->
-    
-    
+
+
             </div><!--.form-wrap-->
-    
+
         </div>
         <h1>精選歌單</h1>
 
@@ -320,6 +314,12 @@
 
     <div class="back-top " title="回頂部"><a href="#a">TOP</a></div>
     <script src="./js/all.js"></script>
+    <script>
+        $('.submult').on("click", () => {
+    console.log("123");
+})
+      
+    </script>
 </body>
 <footer class="bg-light text-center text-lg-start">
 

@@ -11,7 +11,13 @@ nav a:visited {
 #navbarSupportedContent a:hover {
     opacity: 0.8;
 }
-
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
 .back-top {
     width: 40px;
     height: 35px;
@@ -39,15 +45,16 @@ nav a:visited {
     text-align: center;
 
 }
-.login-popup{
+
+.login-popup {
     width: 500px;
     height: 500px;
     display: block;
     position: fixed;
-    top: 0;
-    left: 100;
+    top: 40%;
+    left: 40%;
     z-index: 9999;
-   
+
 }
 
 
@@ -56,21 +63,20 @@ nav a:visited {
     border: solid 4px;
     width: 30px;
     height: 30px;
-    display: inline-block;
+    text-align: center;
     position: absolute;
-text-align: center;    
-    top: 415px;
-    left: 890px;
+    top: 0;
+    right: 0;
     border-radius: 100%;
     font-weight: bold;
-    
+
 }
 
 .form-wrap {
     background-color: gold;
     width: 500px;
     padding: 30px 0px 0px 0px;
-    margin: 85%;
+    margin: auto;
     border-radius: 30px;
     box-shadow: 0px 1px 8px #8E8E8E;
     -webkit-box-shadow: 0px 1px 8px #8E8E8E;
@@ -94,7 +100,7 @@ text-align: center;
     backdrop-filter: blur(12.5px);
     background-color: #8e8e8e84;
     display: block;
-    
+
 }
 
 .form-wrap .tabs h3 a.active {
@@ -131,7 +137,7 @@ text-align: center;
 }
 
 .form-wrap form .btn {
-    margin: auto 40%;
+    margin: auto ;
 }
 
 .form-wrap form .forget a {
@@ -211,6 +217,9 @@ text-align: center;
     text-align: center;
     padding-top: 20%;
 }
-.btn{
-    background-color: transparent!important;
+
+.btn {
+    background-color: transparent !important;
+    border: solid 1px !important;
+
 }

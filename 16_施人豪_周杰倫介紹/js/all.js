@@ -3,6 +3,7 @@ const overlay = document.getElementById("overlay");
 const loginPopup = document.getElementById("loginPopup");
 const closePopupBtn = document.getElementById("closePopupBtn");
 
+
 showPopupBtn.addEventListener("click", () => {
     // overlay.style.display = "block";
     loginPopup.style.display = "block";
