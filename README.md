@@ -13,7 +13,7 @@
 ### 小專作品連結
 https://hank0824.github.io/projet/index.html
 
-# 大專的題目是投資網站，負責的部分是股票消息頁面
+# 大專的題目是投資網站，負責的部分是股票消息頁面(Stock檔案)
 
 ## 前端技術
 ### HTML+SCSS：
