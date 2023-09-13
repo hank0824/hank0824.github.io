@@ -24,4 +24,4 @@ Node.js ：
           1.使用ejs功能進行畫面的渲染
           2.使用express套件連結資料庫製作json格式，GET、POST的API
           
-          ![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/147cd0d9-85f8-4d50-9702-a95f7956ab67)
+             ![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/147cd0d9-85f8-4d50-9702-a95f7956ab67)
