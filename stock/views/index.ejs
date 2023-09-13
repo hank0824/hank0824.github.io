@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瘋資股</title>
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <%- include('login.ejs') %>
+    <!-- 遮罩div -->
+    <!-- 標題主選單 -->
+    <!-- 登入註冊彈出視窗 -->
+                <!-- 註冊畫面 -->
+                <!-- 登入畫面 -->      
+    <!-- 內容 -->
+
+    <!-- 加入自選股 -->
+   
+
+    <div class="index_1">
+        <div class="index_2">
+            <div class="index_slogan">
+                <span>掌</span>
+                <span>握</span>
+                <span>未</span>
+                <span>來</span>
+                <span>，</span>
+                <span>從</span>
+                <span>這</span>
+                <span>開</span>
+                <span>始</span>
+                <br><br>
+                <span>您</span>
+                <span>的</span>
+                <span>財</span>
+                <span>富</span>
+                <span>，</span>
+                <span>我</span>
+                <span>們</span>
+                <span>專</span>
+                <span>注</span>
+            </div>
+            <div class="index_btnn">
+                <a href="#section2" class="index_btn">&nbsp;▼&nbsp;&nbsp;Start Now&nbsp;&nbsp;▼&nbsp;</a>
+            </div>
+        </div>
+        <div class="index_img"><img src="images/index_img.png" alt="main"></div>
+    </div>
+    <div class="index_row">
+        <div class="index_3">
+            <div class="index_img_1"><img class="animate__animated animate__fadeInDown" src="./Binoculars.png" alt="探索">
+            </div>
+            <div class="index_mix">
+                <div class="index_slogan_1">
+                    <p class="animate__animated animate__fadeInDown">全球視野，本地洞見</p>
+                </div>
+                <div class="index_min">
+                    <p class="animate__animated animate__fadeInDown">新興成熟市場，投資見解提供，開拓更多獲利契機。</p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="index_line"></div>
+            <div class="spacer"></div>
+        </div>
+
+        <div class="index_3">
+            <div class="index_img_1"><img class="animate__animated animate__fadeInDown" src="./Idea.png" alt="探索"></div>
+            <div class="index_mix">
+                <div class="index_slogan_1">
+                    <p class="animate__animated animate__fadeInDown">專業分析，深度洞察</p>
+                </div>
+                <div class="index_min">
+                    <p class="animate__animated animate__fadeInDown">匯集專業觀點，全面評估投資，發揮更大收益潛力。</p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="index_line"></div>
+            <div class="spacer"></div>
+        </div>
+
+        <div class="index_3">
+            <div class="index_img_1"><img class="animate__animated animate__fadeInDown" src="./Ok.png" alt="探索"></div>
+            <div class="index_mix">
+                <div class="index_slogan_1">
+                    <p class="animate__animated animate__fadeInDown">歷經市場，堅定實力</p>
+                </div>
+                <div class="index_min">
+                    <p class="animate__animated animate__fadeInDown">市場驗證實力，經驗豐富團隊，股市為您創造回報。</p>
+                </div>
+                <div class="spacer_1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="index_4" id="section2">
+        <div class="index_slogan_2">
+            <br><br><br>
+            <a class="links" href="/stock/stock.html"><span>即刻掌握最新盤勢</span></a>
+            <div class="index_content">
+                <div class="index_stock">
+                    <!-- 成交圖 -->
+
+                    <canvas id="myChart"></canvas>
+
+                </div>
+            </div>
+        </div>
+        <div class="index_partner"><span>合作券商</span>
+            <div class="index_box"><a href="https://www.tssco.com.tw/"><img src="./Taishin 1.png" alt="台新">台新證券</a>
+            </div><br>
+            <div class="index_box"><a href="https://www.yuanta.com.tw/eyuanta/"><img src="./Yuanta1.png"
+                        alt="元大">元大證券</a></div><br>
+            <div class="index_box"><a href="https://www.emega.com.tw/index.do"><img src="./Mega1.png" alt="兆豐">兆豐證券</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="index_5">
+        <div>
+            <a class="links" href="/article/article.html"><span>會員精選股市文章</span></a>            
+            <div class="index_content1">
+                <div class="index_box1">
+                    <div class="index_boximg"> <img src="./index_img.png" alt="圖片    ">
+                    </div>
+                    <hr><br>
+                    <div class="index_boxfont">
+                        <p class="index_fonta">ETF實戰｜元大美債20年 (00679B) 配息、股價、淨值、殖利率介紹！</p>
+                        <p class="index_fontb">債券價格下跌似乎總看不到盡頭，但隨著近期通貨膨脹趨緩 、升息即將邁入尾聲，許多投資人都在問：「債券的投資機會是否已經到來？」</p>
+                    </div>
+                </div>
+                <div class="index_box1">
+                    <div class="index_boximg"> <img src="./index_img.png" alt="圖片">
+                    </div>
+                    <hr><br>
+                    <div class="index_boxfont">
+                        <p class="index_fonta">我是標題</p>
+                        <p class="index_fontb">我是內文</p>
+                    </div>
+                </div>
+                <div class="index_box1">
+                    <div class="index_boximg"> <img src="./index_img.png" alt="圖片    ">
+                    </div>
+                    <hr><br>
+                    <div class="index_boxfont">
+                        <p class="index_fonta">我是標題</p>
+                        <p class="index_fontb">我是內文</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 获取要滚动到的目标元素
+        var targetElement = document.getElementById('section2');
+
+        // 添加点击事件处理程序到链接
+        document.querySelector('.index_btn').addEventListener('click', function (e) {
+            e.preventDefault(); // 阻止默认的跳转行为
+
+            // 计算目标元素的位置
+            var targetPosition = targetElement.getBoundingClientRect().top;
+
+            // 滚动到目标位置
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth' // 平滑滚动
+            });
+        });
+
+
+        const ctx = document.getElementById('myChart');
+
+        const labels = ['一月份', '二月份', '三月份', '四月份', '五月份', '六月份', '七月份', '八月份', '九月份', '十月份', '十一月份', '十二月份'];  // 设置 X 轴上对应的标签
+        const data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: '鴻海',
+                    data: [300, 800, 1000, 110, 200, 400, 80, 20, 60, 90, 100, 500],
+                    backgroundColor: "#D200D2",
+                    borderColor: "#D200D2",
+                    label: '大盤指數',
+                },
+            ]
+        };
+        const config = {
+            type: 'line', // 设置图表类型
+            data: data,
+        };
+        const myChart = new Chart(ctx, config);
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

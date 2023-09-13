@@ -1,0 +1,15 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveSassCompile.settings.includeItems": [
+
+    ],
+    //Live Sass Compiler設定
+"liveSassCompile.settings.formats":[
+    {
+        "format":"expanded",  //未壓縮格式
+        "extensionName":".css",  //副檔名
+        "savePath": "~/.."  //路徑
+    }
+],
+"liveSassCompile.settings.generateMap": false  //不產生map檔
+}

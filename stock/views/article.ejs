@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="article_background">
+    <%- include('login.ejs') %>
+    <!-- 遮罩div -->
+    <!-- 標題主選單 -->
+    <!-- 登入註冊彈出視窗 -->
+                <!-- 註冊畫面 -->
+                <!-- 登入畫面 -->      
+    <!-- 內容 -->
+
+    <!-- 加入自選股 -->
+    <div class="articleBody">
+        <div class="leftSide">
+            <button class="sideBtn">新手教學</button>
+            <button class="sideBtn">技術分析</button>
+            <button class="sideBtn">基本面分析</button>
+            <button class="sideBtn">最新消息</button>
+        </div>
+
+        <div class="articleShow">
+
+            <!-- 文章1 -->
+            <div class="articleBlock">
+                <div class="articleText">
+                    <div class="articleTitle">
+                        <%= title%>
+                    </div>
+
+                    <div class="articleSimple">
+                        <%= contentSimple%>..........
+                    </div>
+                </div>
+
+                <img class="articleImg" src="../images/參考圖片/07fe120933d1f069f871ab96f8f63887.jpg" alt="">
+
+                <div class="articleBottom">
+                    <i>24 Comments</i>
+                    <i style="margin-left: 200px;">
+                        <img class="likes" src="/images/Facebook Like.png" alt="">
+                        <%= likes%> Likes
+                    </i>
+                </div>
+            </div>
+
+            <!-- 文章2 -->
+            <div class="articleBlock">
+                <div class="articleText">
+                    <div class="articleTitle">
+                        ETF實戰｜元大美債20年 (00679B) 配息、股價、淨值、殖利率介紹！
+                    </div>
+
+                    <div class="articleSimple">
+                        債券價格下跌似乎總看不到盡頭，但隨著近期通貨膨脹趨緩 、升息即將邁入尾聲，許多投資人都在問：「債券的投資機會是否已經到來？」
+                    </div>
+                </div>
+
+                <img class="articleImg" src="../images/參考圖片/07fe120933d1f069f871ab96f8f63887.jpg" alt="">
+
+                <div class="articleBottom">
+                    <i>24 Comments</i>
+                    <i style="margin-left: 200px;">
+                        <img class="likes" src="../images/Facebook Like.png" alt="">
+                        30 Likes
+                    </i>
+                </div>
+            </div>
+
+
+
+        </div>
+</script>
+</html>

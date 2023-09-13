@@ -1,0 +1,282 @@
+/* 導入字型 */
+body {
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* BAR的主色長寬 */
+.header {
+  background-color: #0E0E0E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+
+}
+
+/* LOGO圖片 */
+.navbar-left a img {
+  float: left;
+  width: 50px;
+  height: 60px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+/* BAR標頭連結 */
+.navbar-right .btn {
+  float: right;
+  margin: 18px;
+  padding: 2px 25px;
+  font-size: 14px;
+}
+
+/* 按鈕顏色 */
+.btn {
+  /* background-image: linear-gradient(to right, white,  #0E0E0E); */
+  background-color: #0E0E0E;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0px solid white;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 15px 2px #FFFFFF;
+  box-shadow: 2px 2px 15px 2px #FFFFFF;
+}
+
+/* 登入註冊按鈕位置顏色 */
+.navbar-right a {
+  padding: 16px 20px;
+  float: right;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.navbar-right .login:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+/* 標籤觸碰底線 */
+.nav-links .links::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgb(236, 236, 236);
+  display: block;
+  margin: auto;
+  transition: 0.6s;
+}
+
+/* 標籤觸碰底線 */
+.nav-links .links:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 遮罩背景 */
+.overlay {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.247); */
+  backdrop-filter: blur(3px);
+  z-index: 98;
+}
+
+/* 登入彈跳視窗 */
+.login-popup {
+  /* display: none; */
+  z-index: 99;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+  background-color: #8e8e8e24;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #0E0E0E;
+}
+
+/* 關掉彈跳視窗 */
+.close-btn {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  right: -15px;
+  border: 0px rgb(219, 219, 219);
+  /* border-radius: 100%; */
+  /* font-weight: bold; */
+  /* text-decoration: none; */
+}
+
+
+
+
+
+.form-wrap {
+  width: 320px;
+  padding: 30px 0px 0px 0px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0px 1px 8px #8E8E8E;
+  -webkit-box-shadow: 0px 1px 8px #8E8E8E;
+  -moz-box-shadow: 0px 1px 8px #8E8E8E;
+  backdrop-filter: blur(5px);
+}
+
+.form-wrap .tabs {
+  overflow: hidden;
+}
+
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+
+.form-wrap .tabs h3 a {
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  backdrop-filter: blur(5px);
+  /* background-color: #8e8e8e8e; */
+  display: block;
+  /* visibility: visible; */
+  color: #666;
+}
+
+.form-wrap .tabs h3 a.active {
+  /* background-color: #8e8e8e8e; */
+  color: #fff;
+  backdrop-filter: blur(5px);
+  /* border-bottom: 3xp solid #FFFFFF; */
+}
+
+.form-wrap .tabs-content {
+  padding: 1.5em;
+}
+
+.form-wrap .tabs-content div[id$="tab-content"] {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.form-wrap .tabs-content .active {
+  display: block !important;
+  /* visibility: visible !important; */
+}
+
+.form-wrap form .input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #8E8E8E;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #8E8E8E;
+  outline: none;
+  background: transparent;
+
+  /* box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: .8em 0 10px .8em;
+  border: 0px 0px 5px 0px solid #8E8E8E !important;
+  /* border: none; */
+  /*outline: 0;
+  display: inline-block;
+  margin: 0 0 .8em 0;
+  width: 100%;
+  background-color: #8E8E8E; */
+}
+
+/* .form-wrap form .btn {
+  margin: auto 40%;
+} */
+
+.form-wrap form .forget a {
+  float: right;
+  margin: 5px 0px 20px 0px;
+  color: #0E0E0E;
+  /* cursor: pointer; */
+  text-decoration: none;
+  font-size: 14px;
+  /* text-transform: uppercase;*/
+}
+
+.form-wrap form .forget a:hover {
+  color: #1500ff91;
+}
+
+.btn-center {
+  padding: 5px 30px;
+  margin: 20px 100px;
+}
+
+
+.btn:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+
+
+/* .form-wrap .help-text {
+  margin-top: .6em;
+}
+
+.form-wrap .help-text p {
+  text-align: center;
+  font-size: 14px;
+} */
+
+
+.wrap {
+  text-align: center;
+  padding-top: 20%;
+}
+
+
+
+/* footer 底下 */
+.footer {
+  overflow: hidden;
+  background-color: #0E0E0E;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  z-index: 97;
+}
