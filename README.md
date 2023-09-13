@@ -23,10 +23,8 @@ https://hank0824.github.io/projet/index.html
 ## 前端技術
 ### HTML+SCSS：
 * 進行畫面切版，RWD以576px為主
-
-![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/518f89a6-d9b2-4900-8f17-b47557831f09)
-
-  ![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/781bc77a-bab5-44a6-b5e7-ddeb6126d3ca)
+![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/824c76d1-d490-4541-8272-1a865ca003a9)
+![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/781bc77a-bab5-44a6-b5e7-ddeb6126d3ca)
 
 * 以下為操作流程
 * 1.點擊可出現下拉選單
