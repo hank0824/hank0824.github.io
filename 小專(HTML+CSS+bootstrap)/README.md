@@ -1,42 +1,19 @@
-# 小專題目
+# 小專
 ###### 周杰倫的介紹，專輯購物車功能，純前端畫面的切版  
 
 ### HTML+CSS+bootstrap 
 
 * 進行畫面的切版
 
+![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/45c69276-b93f-4aa9-b78f-e9cdbc5e825a)
+![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/b7a151aa-09fb-4b80-a2b5-22dd14cd8b59)
+
+
 ### javascript 
 
 * 控制購物車功能，進行數量及金額的計算
+![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/be6a24de-b216-4bdb-8b09-378b35ea5794)
 
 
 ### 小專作品連結
 https://hank0824.github.io/projet/index.html
-
-# 大專的題目是投資網站，負責的部分是股票消息頁面(Stock檔案)
-
-## 前端技術
-### HTML+SCSS：
-* 進行畫面切版，RWD以576px為主
-* ![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/b171a0a9-ef49-449e-8cb0-c12701124793)
-
-          
-### javascript +JQery：  
-* 1.AJAX技術來串接Json格式的API
-* 2.利用javascript製作彈窗功能
-* 3.Chart.js套件：
-        使用該套件串API的格式進行圖表的呈現
-
-![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/362ce44f-6900-48d4-987c-ea9ca4bb4879)
-![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/716ac5d3-22bf-4e41-8285-c5906e4fe2f5)
-
-## 後端
-### MySQL資料庫 ：
-* 進行資料庫的建立
-![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/370c6040-54c0-4373-a4eb-67427b8158f2)
-
-### Node.js 
-* 1.使用ejs功能進行畫面的渲染
-* 2.使用express套件連結資料庫製作json格式，GET、POST的API
-
-![image](https://github.com/hank0824/hank0824.github.io/assets/64567910/eaf73180-96cc-4af9-8f9c-838782d16a79)
